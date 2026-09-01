@@ -1,0 +1,1175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="HERACLES LAB 每日运动科学像素学习游戏：增肌训练力竭指南。">
+  <title>HERACLES LAB · SCIENCE QUEST</title>
+  <style>
+    :root {
+      --ink: #172033;
+      --muted: #657086;
+      --paper: #fffdf6;
+      --paper-2: #f4efe2;
+      --night: #101827;
+      --night-2: #1c2940;
+      --gold: #ffbd3d;
+      --gold-dark: #b56b10;
+      --cyan: #42d6c4;
+      --red: #ed5d68;
+      --green: #58c77b;
+      --purple: #8d6de8;
+      --line: #26344f;
+      --shadow: 0 5px 0 #172033;
+      --safe-bottom: max(18px, env(safe-area-inset-bottom));
+    }
+
+    * { box-sizing: border-box; }
+
+    html { min-height: 100%; background: var(--night); }
+
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      background:
+        linear-gradient(rgba(255,255,255,.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.025) 1px, transparent 1px),
+        radial-gradient(circle at 50% -10%, #334466 0, #111827 48%, #090f1b 100%);
+      background-size: 8px 8px, 8px 8px, auto;
+      font-family: "PingFang SC", "Microsoft YaHei", system-ui, sans-serif;
+      -webkit-font-smoothing: none;
+      -webkit-tap-highlight-color: transparent;
+      overscroll-behavior: none;
+    }
+
+    button, a { font: inherit; }
+    button { touch-action: manipulation; }
+    [hidden] { display: none !important; }
+
+    .app {
+      width: min(100%, 540px);
+      min-height: 100vh;
+      margin: 0 auto;
+      background: var(--paper);
+      box-shadow: 0 0 70px rgba(0,0,0,.48);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .topbar {
+      min-height: 64px;
+      padding: max(13px, env(safe-area-inset-top)) 16px 10px;
+      color: #fff;
+      background: var(--night);
+      border-bottom: 4px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      position: relative;
+      z-index: 10;
+    }
+
+    .brand { min-width: 0; }
+    .brand-kicker {
+      color: var(--gold);
+      font: 800 10px/1.1 ui-monospace, "SFMono-Regular", monospace;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .brand-title {
+      margin-top: 4px;
+      color: #fff;
+      font: 900 16px/1 ui-monospace, "SFMono-Regular", monospace;
+      letter-spacing: .03em;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .icon-btn {
+      width: 42px;
+      height: 42px;
+      padding: 0;
+      border: 2px solid #5b6881;
+      border-radius: 4px;
+      color: #fff;
+      background: #25324a;
+      box-shadow: 0 3px 0 #070b12;
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+    }
+    .icon-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 #070b12; }
+    .icon-btn svg { width: 22px; height: 22px; fill: currentColor; }
+
+    .screen { min-height: calc(100vh - 64px); }
+
+    .hero-panel {
+      position: relative;
+      min-height: 310px;
+      padding: 28px 20px 24px;
+      color: #fff;
+      background:
+        linear-gradient(180deg, rgba(16,24,39,.05), rgba(16,24,39,.92)),
+        repeating-linear-gradient(90deg, transparent 0 30px, rgba(255,255,255,.035) 30px 32px),
+        linear-gradient(135deg, #314364, #151f31 58%, #101827);
+      border-bottom: 5px solid var(--ink);
+      overflow: hidden;
+    }
+
+    .pixel-stars { position: absolute; inset: 0; opacity: .8; pointer-events: none; }
+    .pixel-stars i { position: absolute; width: 4px; height: 4px; background: var(--gold); box-shadow: 4px 0 var(--gold), 0 4px var(--gold); }
+    .pixel-stars i:nth-child(1) { left: 8%; top: 13%; }
+    .pixel-stars i:nth-child(2) { left: 85%; top: 19%; transform: scale(.7); }
+    .pixel-stars i:nth-child(3) { left: 73%; top: 42%; transform: scale(.5); }
+    .pixel-stars i:nth-child(4) { left: 16%; top: 56%; transform: scale(.45); }
+
+    .chapter-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 9px;
+      color: var(--night);
+      background: var(--gold);
+      border: 2px solid #ffe493;
+      box-shadow: 3px 3px 0 #6f430d;
+      font: 900 11px/1 ui-monospace, monospace;
+      letter-spacing: .08em;
+      position: relative;
+      z-index: 1;
+    }
+
+    .home-title {
+      max-width: 420px;
+      margin: 20px 0 10px;
+      font-size: clamp(34px, 10vw, 50px);
+      line-height: .98;
+      letter-spacing: -.05em;
+      text-shadow: 4px 4px 0 #0a0e17;
+      position: relative;
+      z-index: 1;
+    }
+    .home-title span { display: block; color: var(--gold); }
+    .home-subtitle {
+      max-width: 350px;
+      margin: 0;
+      color: #cfd8e8;
+      font-size: 14px;
+      line-height: 1.6;
+      position: relative;
+      z-index: 1;
+    }
+
+    .pixel-plate {
+      position: absolute;
+      width: 118px;
+      height: 118px;
+      right: -12px;
+      bottom: -8px;
+      border: 14px solid #ed5d68;
+      border-radius: 50%;
+      background: #7f2633;
+      box-shadow: inset 0 0 0 8px #c54450, 7px 7px 0 #080c14;
+      transform: rotate(-12deg);
+    }
+    .pixel-plate::before {
+      content: "25";
+      position: absolute;
+      inset: 20px;
+      border-radius: 50%;
+      color: #fff;
+      background: #1b2539;
+      display: grid;
+      place-items: center;
+      font: 900 24px/1 ui-monospace, monospace;
+    }
+    .pixel-plate::after {
+      content: "KG";
+      position: absolute;
+      left: 36px;
+      bottom: 9px;
+      color: #ffc4ca;
+      font: 900 10px/1 ui-monospace, monospace;
+    }
+
+    .home-content {
+      padding: 18px 16px calc(28px + var(--safe-bottom));
+      background: var(--paper);
+    }
+
+    .daily-card {
+      padding: 16px;
+      background: #fff;
+      border: 3px solid var(--ink);
+      border-radius: 7px;
+      box-shadow: var(--shadow);
+    }
+    .daily-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 14px; }
+    .eyebrow { margin: 0 0 5px; color: var(--purple); font: 900 11px/1.2 ui-monospace, monospace; letter-spacing: .08em; }
+    .daily-card h2 { margin: 0; font-size: 24px; line-height: 1.18; }
+    .level-badge {
+      flex: 0 0 auto;
+      min-width: 58px;
+      padding: 6px 7px;
+      color: #fff;
+      background: var(--purple);
+      border: 2px solid var(--ink);
+      box-shadow: 2px 2px 0 var(--ink);
+      text-align: center;
+      font: 900 10px/1.25 ui-monospace, monospace;
+    }
+
+    .meta-row { display: flex; flex-wrap: wrap; gap: 8px; margin: 13px 0 15px; }
+    .meta-chip { padding: 5px 8px; color: #465269; background: var(--paper-2); border: 1px solid #d8cfbc; font-size: 12px; font-weight: 700; }
+
+    .progress-box { display: grid; grid-template-columns: repeat(3, 1fr); gap: 7px; margin-bottom: 15px; }
+    .progress-stat { padding: 9px 6px; color: #596276; background: #f5f7fb; border: 2px solid #dce2ec; text-align: center; font-size: 10px; font-weight: 800; }
+    .progress-stat strong { display: block; margin-bottom: 3px; color: var(--ink); font: 900 18px/1 ui-monospace, monospace; }
+
+    .primary-btn, .secondary-btn, .choice-btn, .text-btn {
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: 900;
+    }
+    .primary-btn {
+      width: 100%;
+      min-height: 54px;
+      padding: 12px 18px;
+      color: #17120a;
+      background: var(--gold);
+      border: 3px solid var(--ink);
+      box-shadow: 0 5px 0 var(--ink);
+      font-size: 16px;
+      letter-spacing: .03em;
+    }
+    .primary-btn:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--ink); }
+    .primary-btn:focus-visible, .secondary-btn:focus-visible, .choice-btn:focus-visible, .icon-btn:focus-visible { outline: 4px solid var(--cyan); outline-offset: 2px; }
+
+    .secondary-btn {
+      min-height: 48px;
+      padding: 10px 14px;
+      color: var(--ink);
+      background: #fff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 3px 0 var(--ink);
+    }
+    .secondary-btn:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--ink); }
+    .card-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 9px; margin-top: 11px; }
+
+    .principle {
+      margin-top: 20px;
+      padding: 13px 14px;
+      border-left: 5px solid var(--cyan);
+      color: #465269;
+      background: #eefbf8;
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .principle strong { color: var(--ink); }
+
+    /* Game */
+    .game-screen { background: var(--paper); padding-bottom: var(--safe-bottom); }
+    .game-hud { padding: 10px 12px; color: #fff; background: var(--night-2); border-bottom: 3px solid #090d15; }
+    .hud-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+    .stage-name { font: 900 12px/1 ui-monospace, monospace; letter-spacing: .06em; }
+    .stage-counter { color: var(--gold); font: 900 12px/1 ui-monospace, monospace; }
+    .health-row { display: grid; grid-template-columns: 72px 1fr auto; align-items: center; gap: 7px; margin-top: 6px; font-size: 10px; font-weight: 900; }
+    .health-value { min-width: 30px; text-align: right; font: 800 10px/1 ui-monospace, monospace; }
+    .bar { height: 11px; padding: 2px; border: 1px solid #70809c; background: #080c13; }
+    .bar > i { display: block; width: 100%; height: 100%; background: var(--green); transition: width .35s steps(8); }
+    .bar.enemy > i { background: var(--red); }
+
+    .arena-wrap { position: relative; background: #121a29; border-bottom: 4px solid var(--ink); }
+    #arena { display: block; width: 100%; aspect-ratio: 16/9; image-rendering: pixelated; }
+    .arena-flash { position: absolute; inset: 0; background: rgba(255,255,255,.85); opacity: 0; pointer-events: none; }
+    .arena-flash.go { animation: flash .2s steps(2); }
+    @keyframes flash { 50% { opacity: .8; } }
+
+    .metrics {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 5px;
+      padding: 8px 10px;
+      color: #d9e2f1;
+      background: #1b263a;
+      border-bottom: 3px solid var(--ink);
+    }
+    .metric { min-width: 0; font-size: 9px; font-weight: 900; }
+    .metric-label { display: flex; justify-content: space-between; gap: 4px; margin-bottom: 4px; }
+    .mini-bar { height: 6px; background: #080c13; }
+    .mini-bar i { display: block; height: 100%; width: 50%; background: var(--cyan); transition: width .3s steps(6); }
+    .metric:nth-child(2) .mini-bar i { background: var(--red); }
+    .metric:nth-child(3) .mini-bar i { background: var(--gold); }
+
+    .question-panel { padding: 15px 14px 22px; }
+    .question-kicker { margin: 0 0 7px; color: var(--purple); font: 900 11px/1 ui-monospace, monospace; letter-spacing: .08em; }
+    .question-text { min-height: 52px; margin: 0 0 13px; color: var(--ink); font-size: 18px; line-height: 1.45; }
+    .choices { display: grid; gap: 9px; }
+    .choice-btn {
+      width: 100%;
+      min-height: 54px;
+      padding: 11px 12px;
+      color: var(--ink);
+      background: #fff;
+      border: 2px solid var(--ink);
+      box-shadow: 0 3px 0 #aeb6c5;
+      display: grid;
+      grid-template-columns: 30px 1fr;
+      align-items: center;
+      gap: 10px;
+      text-align: left;
+      line-height: 1.35;
+    }
+    .choice-key { width: 28px; height: 28px; color: #fff; background: var(--night-2); border: 2px solid var(--ink); display: grid; place-items: center; font: 900 12px/1 ui-monospace, monospace; }
+    .choice-btn:hover { background: #fff9e7; }
+    .choice-btn:disabled { cursor: default; }
+    .choice-btn.wrong { color: #7c2931; background: #fff0f1; border-color: var(--red); box-shadow: 0 3px 0 #b23640; opacity: .76; }
+    .choice-btn.correct { color: #155c31; background: #ecfff2; border-color: var(--green); box-shadow: 0 3px 0 #27864a; }
+
+    .feedback {
+      margin-top: 12px;
+      padding: 12px;
+      border: 2px solid var(--ink);
+      background: #fff;
+      box-shadow: 3px 3px 0 var(--ink);
+      font-size: 13px;
+      line-height: 1.55;
+    }
+    .feedback.good { border-left: 7px solid var(--green); }
+    .feedback.bad { border-left: 7px solid var(--red); }
+    .feedback strong { display: block; margin-bottom: 3px; font-size: 14px; }
+    .next-btn { margin-top: 11px; }
+
+    /* Story and learning */
+    .story-screen, .learn-screen, .result-screen { padding-bottom: var(--safe-bottom); background: var(--paper); }
+    .story-art {
+      height: 238px;
+      color: #fff;
+      background: linear-gradient(#273957 0 62%, #1a2436 62% 100%);
+      border-bottom: 5px solid var(--ink);
+      position: relative;
+      overflow: hidden;
+    }
+    .temple-columns::before, .temple-columns::after { content: ""; position: absolute; bottom: 35px; width: 36px; height: 150px; background: repeating-linear-gradient(90deg,#b8a87d 0 7px,#8a7d5d 7px 11px); border: 5px solid #584e3b; box-shadow: 0 -14px 0 #d0bf8e, 0 -20px 0 #584e3b; }
+    .temple-columns::before { left: 22px; }
+    .temple-columns::after { right: 22px; }
+    .barbell-pixel { position: absolute; left: 50%; top: 72px; width: 154px; height: 8px; background: #d7dde8; box-shadow: 0 4px #66728a; transform: translateX(-50%); }
+    .barbell-pixel::before, .barbell-pixel::after { content:""; position:absolute; top:-21px; width:22px; height:50px; background:var(--red); border:5px solid #7e2430; box-shadow: inset 4px 0 #ff7d86; }
+    .barbell-pixel::before { left: 8px; }
+    .barbell-pixel::after { right: 8px; }
+    .story-hero { position: absolute; left: 50%; bottom: 22px; width: 54px; height: 82px; transform: translateX(-50%); }
+    .story-hero::before { content:""; position:absolute; left:14px; top:0; width:27px; height:27px; background:#d49b68; border:4px solid #38271d; box-shadow: inset 0 -5px #a96c46; }
+    .story-hero::after { content:""; position:absolute; left:7px; bottom:0; width:40px; height:51px; background:#3b89ba; border:5px solid #172033; box-shadow: -10px 10px 0 -3px #d49b68, 10px 10px 0 -3px #d49b68; }
+    .story-body { padding: 21px 18px 28px; }
+    .story-body h1 { margin: 0 0 8px; font-size: 28px; line-height: 1.1; }
+    .story-body p { color: #4e5a70; line-height: 1.7; }
+    .speech { margin: 15px 0; padding: 13px 14px; background: #fff; border: 3px solid var(--ink); box-shadow: var(--shadow); font-weight: 800; line-height: 1.6; }
+    .speech::before { content: "任务"; display: inline-block; margin: -2px 8px 0 0; padding: 3px 6px; color: #fff; background: var(--purple); font: 900 10px/1 ui-monospace, monospace; vertical-align: 2px; }
+
+    .learn-head { padding: 22px 18px 15px; color: #fff; background: var(--night-2); border-bottom: 4px solid var(--gold); }
+    .learn-head h1 { margin: 5px 0 5px; font-size: 26px; }
+    .learn-head p { margin: 0; color: #c8d2e3; font-size: 13px; }
+    .cards { padding: 18px 16px; }
+    .knowledge-card { min-height: 270px; padding: 19px; border: 3px solid var(--ink); border-radius: 7px; background: #fff; box-shadow: var(--shadow); }
+    .card-num { display: inline-grid; place-items: center; width: 34px; height: 34px; color: #fff; background: var(--purple); border: 2px solid var(--ink); box-shadow: 2px 2px 0 var(--ink); font: 900 14px/1 ui-monospace, monospace; }
+    .knowledge-card h2 { margin: 15px 0 10px; font-size: 26px; }
+    .knowledge-card p { color: #4e5a70; font-size: 15px; line-height: 1.75; }
+    .formula { margin: 15px 0; padding: 12px; color: #fff; background: var(--night-2); border-left: 6px solid var(--gold); font: 900 15px/1.5 ui-monospace, "PingFang SC", monospace; }
+    .card-nav { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 16px; }
+    .dots { display: flex; gap: 6px; }
+    .dots i { width: 9px; height: 9px; background: #c6ccda; border: 1px solid var(--ink); }
+    .dots i.active { background: var(--gold); }
+
+    /* Results */
+    .result-hero { padding: 25px 18px 22px; color: #fff; background: linear-gradient(145deg,#273a5b,#111827); border-bottom: 5px solid var(--gold); text-align: center; }
+    .trophy { width: 84px; height: 68px; margin: 2px auto 18px; position: relative; background: var(--gold); border: 5px solid #6e430c; box-shadow: inset 7px 0 #ffe18b, 5px 5px 0 #070b12; }
+    .trophy::before, .trophy::after { content:""; position:absolute; top:5px; width:24px; height:34px; border:6px solid var(--gold); }
+    .trophy::before { left:-27px; border-right:0; }
+    .trophy::after { right:-27px; border-left:0; }
+    .trophy-base { position:absolute; left:26px; bottom:-25px; width:31px; height:25px; background:#b46c11; border:5px solid #6e430c; }
+    .result-hero h1 { margin: 0 0 5px; font-size: 30px; }
+    .rank { color: var(--gold); font: 900 18px/1.2 ui-monospace, monospace; }
+    .result-body { padding: 17px 15px 28px; }
+    .score-grid { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 7px; }
+    .score-card { padding: 12px 6px; background: #fff; border: 2px solid var(--ink); text-align: center; box-shadow: 0 3px 0 #aeb6c5; }
+    .score-card strong { display: block; margin-bottom: 4px; font: 900 22px/1 ui-monospace, monospace; }
+    .score-card span { color: var(--muted); font-size: 10px; font-weight: 800; }
+    .takeaways { margin: 18px 0; }
+    .takeaways h2 { font-size: 18px; }
+    .takeaway { display: grid; grid-template-columns: 30px 1fr; gap: 9px; align-items: start; margin: 9px 0; padding: 10px; background: #f5f7fb; border-left: 4px solid var(--cyan); font-size: 13px; line-height: 1.5; }
+    .takeaway b { width: 25px; height: 25px; color: #fff; background: var(--night-2); display: grid; place-items: center; font: 900 10px/1 ui-monospace, monospace; }
+    .review-line { padding: 12px; background: #fff6da; border: 2px dashed #b37719; font-size: 12px; line-height: 1.55; }
+    .result-actions { display: grid; gap: 10px; margin-top: 14px; }
+
+    dialog { width: min(calc(100% - 28px), 500px); max-height: 86vh; padding: 0; border: 3px solid var(--ink); border-radius: 7px; color: var(--ink); background: var(--paper); box-shadow: 8px 8px 0 rgba(0,0,0,.5); }
+    dialog::backdrop { background: rgba(5,9,16,.78); }
+    .modal-head { position: sticky; top: 0; z-index: 2; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 14px; color: #fff; background: var(--night); border-bottom: 4px solid var(--gold); }
+    .modal-head h2 { margin: 0; font-size: 18px; }
+    .modal-body { padding: 17px 15px 24px; }
+    .source-item { margin-bottom: 16px; padding-bottom: 15px; border-bottom: 1px solid #d5d9e2; }
+    .source-item strong { display: block; margin-bottom: 6px; line-height: 1.4; }
+    .source-item p { margin: 4px 0; color: #566177; font-size: 12px; line-height: 1.55; }
+    .source-item a { color: #385db7; overflow-wrap: anywhere; font-size: 12px; }
+    .disclaimer { padding: 10px; color: #6b5428; background: #fff6da; border: 1px solid #dfc27a; font-size: 11px; line-height: 1.5; }
+
+    .toast { position: fixed; left: 50%; bottom: calc(18px + var(--safe-bottom)); z-index: 100; width: min(calc(100% - 30px), 430px); padding: 11px 14px; color: #fff; background: #111827; border: 2px solid var(--gold); box-shadow: 4px 4px 0 rgba(0,0,0,.45); transform: translate(-50%, 120px); opacity: 0; transition: .25s; text-align: center; font-size: 13px; font-weight: 800; pointer-events: none; }
+    .toast.show { transform: translate(-50%, 0); opacity: 1; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+
+    @media (min-width: 541px) {
+      body { padding: 20px 0; }
+      .app { min-height: calc(100vh - 40px); border: 4px solid #070b12; border-radius: 10px; }
+      .screen { min-height: calc(100vh - 108px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .001ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .001ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-kicker">HERACLES LAB</div>
+        <div class="brand-title">SCIENCE QUEST</div>
+      </div>
+      <button class="icon-btn" id="soundBtn" type="button" aria-label="关闭音效" title="音效">
+        <svg id="soundOnIcon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9v6h4l5 4V5L7 9H3zm13.5 3a4.5 4.5 0 0 0-2.5-4.03v8.05A4.5 4.5 0 0 0 16.5 12zm-2.5-8.7v2.06a7 7 0 0 1 0 13.28v2.06A9 9 0 0 0 14 3.3z"/></svg>
+        <svg id="soundOffIcon" viewBox="0 0 24 24" aria-hidden="true" hidden><path d="m16.5 12 3.5 3.5-1.5 1.5-3.5-3.5-3.5 3.5-1.5-1.5 3.5-3.5-3.5-3.5L11.5 7l3.5 3.5L18.5 7 20 8.5 16.5 12zM3 9v6h4l4 3.2V5.8L7 9H3z"/></svg>
+      </button>
+    </header>
+
+    <section class="screen" id="homeScreen">
+      <div class="hero-panel">
+        <div class="pixel-stars"><i></i><i></i><i></i><i></i></div>
+        <div class="chapter-tag">每日运动科学科普 · 像素试炼</div>
+        <h1 class="home-title">科学不是背诵<span>是做出判断</span></h1>
+        <p class="home-subtitle">每天 3–5 分钟：先猜、再学、再战斗。用实战决策打败训练误区。</p>
+        <div class="pixel-plate" aria-hidden="true"></div>
+      </div>
+
+      <div class="home-content">
+        <article class="daily-card">
+          <div class="daily-head">
+            <div>
+              <p class="eyebrow">CHAPTER 01 · 力竭神殿</p>
+              <h2>增肌训练<br>每组都要力竭吗？</h2>
+            </div>
+            <div class="level-badge">难度<br>★★☆</div>
+          </div>
+          <div class="meta-row">
+            <span class="meta-chip">约 4 分钟</span>
+            <span class="meta-chip">5 次决策</span>
+            <span class="meta-chip">情境 Boss</span>
+          </div>
+          <div class="progress-box">
+            <div class="progress-stat"><strong id="streakValue">0</strong>连续学习</div>
+            <div class="progress-stat"><strong id="bestValue">—</strong>最高掌握</div>
+            <div class="progress-stat"><strong id="reviewValue">0</strong>待复习</div>
+          </div>
+          <button class="primary-btn" id="startBtn" type="button">开始第一关 ▶</button>
+          <div class="card-actions">
+            <button class="secondary-btn" id="reviewBtn" type="button">错题复习</button>
+            <button class="secondary-btn" data-open-sources type="button">研究卷轴</button>
+          </div>
+        </article>
+        <div class="principle"><strong>本关训练目标：</strong>区分“接近力竭”和“每组绝对力竭”，学会在刺激、疲劳与动作质量之间做取舍。</div>
+      </div>
+    </section>
+
+    <section class="screen story-screen" id="storyScreen" hidden>
+      <div class="story-art" aria-hidden="true">
+        <div class="temple-columns"></div>
+        <div class="barbell-pixel"></div>
+        <div class="story-hero"></div>
+      </div>
+      <div class="story-body">
+        <p class="eyebrow">序章 · 铁之神殿</p>
+        <h1>疲劳兽苏醒了</h1>
+        <p>一名训练者相信：“不把每一组都练到彻底失败，肌肉就不会生长。”他已经开始动作变形，却仍准备继续。</p>
+        <div class="speech">进入神殿，管理好刺激、疲劳和动作质量。你的每个判断都会改变战局。</div>
+        <button class="primary-btn" id="pretestBtn" type="button">接受任务</button>
+      </div>
+    </section>
+
+    <section class="screen game-screen" id="gameScreen" hidden>
+      <div class="game-hud">
+        <div class="hud-top">
+          <span class="stage-name" id="stageName">战斗 1 · RIR 密码</span>
+          <span class="stage-counter" id="stageCounter">1 / 5</span>
+        </div>
+        <div class="health-row"><span>专注值</span><div class="bar"><i id="playerHpBar"></i></div><span class="health-value" id="playerHpText">100</span></div>
+        <div class="health-row"><span>疲劳兽</span><div class="bar enemy"><i id="enemyHpBar"></i></div><span class="health-value" id="enemyHpText">100</span></div>
+      </div>
+      <div class="arena-wrap">
+        <canvas id="arena" width="640" height="360" role="img" aria-label="像素英雄与疲劳兽的战斗场景"></canvas>
+        <div class="arena-flash" id="arenaFlash"></div>
+      </div>
+      <div class="metrics" aria-label="训练决策状态">
+        <div class="metric"><div class="metric-label"><span>刺激</span><span id="stimulusValue">25</span></div><div class="mini-bar"><i id="stimulusBar"></i></div></div>
+        <div class="metric"><div class="metric-label"><span>疲劳</span><span id="fatigueValue">15</span></div><div class="mini-bar"><i id="fatigueBar"></i></div></div>
+        <div class="metric"><div class="metric-label"><span>动作</span><span id="techniqueValue">80</span></div><div class="mini-bar"><i id="techniqueBar"></i></div></div>
+      </div>
+      <div class="question-panel">
+        <p class="question-kicker" id="questionKicker">知识战斗</p>
+        <h2 class="question-text" id="questionText"></h2>
+        <div class="choices" id="choices"></div>
+        <div class="feedback" id="feedback" role="status" aria-live="polite" hidden></div>
+        <button class="primary-btn next-btn" id="nextBtn" type="button" hidden>下一回合 ▶</button>
+      </div>
+    </section>
+
+    <section class="screen learn-screen" id="learnScreen" hidden>
+      <div class="learn-head">
+        <p class="eyebrow" style="color:var(--gold)">战前补给 · 60 秒</p>
+        <h1>三张知识卡</h1>
+        <p>读完会重新遇到刚才的问题。</p>
+      </div>
+      <div class="cards">
+        <article class="knowledge-card" id="knowledgeCard"></article>
+        <div class="card-nav">
+          <div class="dots" id="cardDots" aria-label="知识卡进度"></div>
+          <button class="secondary-btn" id="cardNextBtn" type="button">下一张</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="screen result-screen" id="resultScreen" hidden>
+      <div class="result-hero">
+        <div class="trophy" aria-hidden="true"><i class="trophy-base"></i></div>
+        <h1>力竭神殿 · 通关</h1>
+        <div class="rank" id="rankText">A · 判断可靠</div>
+      </div>
+      <div class="result-body">
+        <div class="score-grid">
+          <div class="score-card"><strong id="masteryScore">86%</strong><span>掌握度</span></div>
+          <div class="score-card"><strong id="firstTryScore">4/5</strong><span>首次答对</span></div>
+          <div class="score-card"><strong id="focusScore">80</strong><span>剩余专注</span></div>
+        </div>
+        <div class="takeaways">
+          <h2>带走三句话</h2>
+          <div class="takeaway"><b>01</b><span>增肌通常需要足够接近力竭，但没有证据要求每组都做到绝对力竭。</span></div>
+          <div class="takeaway"><b>02</b><span>多数正式组保留约 1–3 RIR 是常用起点；它不是对所有人、所有动作的硬规定。</span></div>
+          <div class="takeaway"><b>03</b><span>力竭可选择性用于更稳定、风险较低的动作，并结合恢复、训练量和动作质量调整。</span></div>
+        </div>
+        <div class="review-line" id="reviewLine">记忆复训已安排：第 1、3、7 天重新判断关键情境。</div>
+        <div class="result-actions">
+          <button class="primary-btn" id="shareBtn" type="button">分享通关成绩</button>
+          <button class="secondary-btn" id="replayBtn" type="button">再挑战一次</button>
+          <button class="secondary-btn" data-open-sources type="button">打开研究卷轴</button>
+          <button class="secondary-btn" id="homeBtn" type="button">返回关卡地图</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="sourcesDialog">
+    <div class="modal-head">
+      <h2>研究卷轴 · References</h2>
+      <button class="icon-btn" id="closeSourcesBtn" type="button" aria-label="关闭研究卷轴">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="source-item">
+        <strong>Influence of Resistance Training Proximity-to-Failure on Skeletal Muscle Hypertrophy: A Systematic Review with Meta-analysis</strong>
+        <p>Refalo MC, Helms ER, Hamilton DL, Fyfe JJ. 2023, Sports Medicine.</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/36334240/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/36334240/</a>
+      </div>
+      <div class="source-item">
+        <strong>Effects of Resistance Training Performed to Repetition Failure or Non-Failure on Muscular Strength and Hypertrophy</strong>
+        <p>Grgic J, Schoenfeld BJ, Orazem J, Sabol F. 2022, Journal of Sport and Health Science.</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/33497853/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/33497853/</a>
+      </div>
+      <div class="source-item">
+        <strong>Exploring the Dose–Response Relationship Between Estimated Resistance Training Proximity to Failure, Strength Gain, and Muscle Hypertrophy</strong>
+        <p>Robinson ZP et al. 2024, Sports Medicine.</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/38970765/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/38970765/</a>
+      </div>
+      <div class="source-item">
+        <strong>Similar Muscle Hypertrophy Following Eight Weeks of Resistance Training to Momentary Muscular Failure or with Repetitions-in-Reserve</strong>
+        <p>Refalo MC et al. 2024, Journal of Sports Sciences.</p>
+        <a href="https://pubmed.ncbi.nlm.nih.gov/38393985/" target="_blank" rel="noopener">https://pubmed.ncbi.nlm.nih.gov/38393985/</a>
+      </div>
+      <div class="disclaimer">本游戏用于一般运动科学教育。研究结论受人群、动作、训练量与研究设计影响；关卡中的 1–3 RIR 是常用实践起点，不是个体处方，也不替代医疗建议。</div>
+    </div>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <div class="sr-only" id="liveRegion" aria-live="assertive"></div>
+
+  <script>
+    (() => {
+      "use strict";
+
+      const STORAGE_KEY = "heracles-science-quest-v1";
+      const DAY = 86400000;
+      const screens = ["homeScreen", "storyScreen", "gameScreen", "learnScreen", "resultScreen"];
+      const el = (id) => document.getElementById(id);
+
+      const knowledgeCards = [
+        {
+          title: "先分清两个终点",
+          body: "RIR（Repetitions in Reserve）是你估计还能用目标动作标准完成几次。力竭则是无法再完成一次符合要求的重复。动作已经明显变形，不等于值得继续硬做。",
+          formula: "2 RIR ＝ 估计还能标准完成 2 次"
+        },
+        {
+          title: "接近，不等于每组撞墙",
+          body: "整体证据提示：离力竭太远可能减少增肌刺激；但把每组都推到绝对力竭，并未稳定显示出额外增肌优势，反而通常带来更多急性疲劳。",
+          formula: "有效刺激 ↑　≠　每组疲劳拉满"
+        },
+        {
+          title: "把力竭当工具",
+          body: "多数正式组保留约 1–3 RIR，可作为增肌训练的实用起点。力竭更适合选择性使用，例如稳定器械或孤立动作的末组；还要看恢复、训练量和动作质量。",
+          formula: "大动作管疲劳 · 稳定动作可选择冲刺"
+        }
+      ];
+
+      const pretest = {
+        stage: "入门判断 · 封印答案",
+        kicker: "先猜，不计分",
+        text: "训练者说：‘只要目标是增肌，每个动作的每一组都必须做到绝对力竭。’你现在怎么判断？",
+        options: [
+          "完全正确，不力竭就没有增肌刺激",
+          "不准确：需要足够接近力竭，但通常不必每组绝对力竭",
+          "完全错误：增肌训练应该始终远离力竭"
+        ],
+        correct: 1,
+        explain: "你的第一判断已经封存。接下来用三张知识卡装备自己，正式战斗后会再次验证。",
+        effects: [{s:8,f:22,t:-10},{s:12,f:5,t:4},{s:3,f:-2,t:4}]
+      };
+
+      const questions = [
+        {
+          stage: "战斗 1 · RIR 密码",
+          kicker: "概念识别",
+          text: "一组结束时记录为 2 RIR，准确含义是什么？",
+          options: ["这组只做了 2 次", "估计还能标准完成约 2 次", "已经失败了 2 次"],
+          correct: 1,
+          success: "正确。RIR 描述的是距离力竭还有多少次标准重复，不是已经完成的次数。",
+          wrong: ["RIR 不是本组完成次数。它关注的是‘还剩几次’。", "", "RIR 不是失败次数，而是估计仍可完成的次数。"],
+          effects: [{s:3,f:2,t:0},{s:14,f:3,t:5},{s:5,f:12,t:-5}],
+          damage: 16
+        },
+        {
+          stage: "战斗 2 · 动作警报",
+          kicker: "情境判断",
+          text: "杠铃深蹲末段速度明显下降，躯干开始失位，训练者估计约剩 1–2 次。以增肌和疲劳管理为目标，怎么做更合理？",
+          options: ["本组结束，记录约 1–2 RIR", "继续到杠铃完全起不来", "立刻把重量再加 20%"],
+          correct: 0,
+          success: "判断可靠。技术开始漂移时结束本组，仍然可能获得充分刺激，同时避免无谓放大风险与疲劳。",
+          wrong: ["", "绝对力竭不是每组的必需条件，复合动作更应考虑动作质量与疲劳成本。", "动作已经失位时加重，会让目标从训练判断变成冒险。"],
+          effects: [{s:16,f:5,t:7},{s:9,f:22,t:-14},{s:2,f:25,t:-18}],
+          damage: 16
+        },
+        {
+          stage: "战斗 3 · 证据之门",
+          kicker: "研究解读",
+          text: "下面哪句话最符合目前关于增肌与力竭的整体证据？",
+          options: ["每组绝对力竭一定带来最大增肌", "离力竭越远，增肌一定越好", "足够接近力竭很重要，但每组绝对力竭并非必要"],
+          correct: 2,
+          success: "命中要害。靠近力竭与刺激相关，但‘更累’不能直接等同于‘一定长得更多’。",
+          wrong: ["研究并不支持把‘每组绝对力竭’当成所有增肌训练的必要条件。", "离力竭太远可能让有效刺激不足。", ""],
+          effects: [{s:11,f:24,t:-7},{s:4,f:-1,t:3},{s:17,f:5,t:5}],
+          damage: 16
+        },
+        {
+          stage: "战斗 4 · 工具选择",
+          kicker: "训练编排",
+          text: "如果要选择性安排一组做到力竭，哪个场景通常更容易管理？",
+          options: ["自由重量深蹲的每一组", "稳定器械或孤立动作的末组", "所有动作热身组"],
+          correct: 1,
+          success: "合理。稳定动作的末组通常更容易控制技术与失败后的处置，但仍需看个体恢复和总量。",
+          wrong: ["高疲劳复合动作每组力竭，往往有更高的恢复和动作质量成本。", "", "热身的任务是准备，不是制造最大疲劳。"],
+          effects: [{s:10,f:26,t:-9},{s:15,f:8,t:5},{s:3,f:14,t:-4}],
+          damage: 16
+        },
+        {
+          stage: "BOSS · 教练的处方",
+          kicker: "最终情境",
+          text: "训练者今天练腿，明天还有高强度骑行。以下哪套安排最兼顾增肌刺激与恢复？",
+          options: [
+            "深蹲、腿举、腿屈伸全部每组绝对力竭",
+            "所有动作都保留 7–8 RIR，尽量不累",
+            "深蹲约 2 RIR；稳定器械按状态接近力竭，必要时末组 0–1 RIR"
+          ],
+          correct: 2,
+          success: "BOSS 击破。你没有机械套用数字，而是在刺激、动作特点和次日恢复需求之间做了可辩护的取舍。",
+          wrong: ["这会把局部与系统疲劳同时推高，可能影响次日表现，而且并非增肌所必需。", "这样可能离力竭过远，训练刺激不足。", ""],
+          effects: [{s:14,f:30,t:-10},{s:4,f:-2,t:5},{s:22,f:7,t:8}],
+          damage: 36
+        }
+      ];
+
+      const defaultSave = () => ({
+        sound: true,
+        best: 0,
+        completedAt: null,
+        completionDays: [],
+        reviews: [],
+        wrongIds: []
+      });
+
+      function loadSave() {
+        try {
+          const saved = JSON.parse(localStorage.getItem(STORAGE_KEY));
+          return Object.assign(defaultSave(), saved || {});
+        } catch (_) { return defaultSave(); }
+      }
+
+      let save = loadSave();
+      let sound = save.sound !== false;
+      let mode = "normal";
+      let cardIndex = 0;
+      let questionIndex = -1;
+      let attempts = 0;
+      let firstTry = 0;
+      let totalAttempts = 0;
+      let enemyHp = 100;
+      let playerHp = 100;
+      let stimulus = 25;
+      let fatigue = 15;
+      let technique = 80;
+      let locked = false;
+      let audioCtx = null;
+      let toastTimer = null;
+
+      function writeSave() {
+        save.sound = sound;
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(save)); } catch (_) {}
+      }
+
+      function localDay(ts = Date.now()) {
+        const d = new Date(ts);
+        return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+      }
+
+      function dueReviews() {
+        const now = Date.now();
+        return save.reviews.filter(r => !r.done && r.due <= now);
+      }
+
+      function streak() {
+        const days = [...new Set(save.completionDays || [])].sort().reverse();
+        if (!days.length) return 0;
+        let count = 0;
+        const cursor = new Date();
+        cursor.setHours(0,0,0,0);
+        const today = localDay(cursor.getTime());
+        const yesterday = localDay(cursor.getTime() - DAY);
+        if (days[0] !== today && days[0] !== yesterday) return 0;
+        if (days[0] === yesterday) cursor.setTime(cursor.getTime() - DAY);
+        for (const day of days) {
+          if (day === localDay(cursor.getTime())) {
+            count++;
+            cursor.setTime(cursor.getTime() - DAY);
+          } else if (day < localDay(cursor.getTime())) break;
+        }
+        return count;
+      }
+
+      function showScreen(id) {
+        screens.forEach(s => el(s).hidden = s !== id);
+        window.scrollTo({top: 0, behavior: "smooth"});
+      }
+
+      function refreshHome() {
+        el("streakValue").textContent = streak();
+        el("bestValue").textContent = save.best ? `${save.best}%` : "—";
+        const due = dueReviews().length;
+        el("reviewValue").textContent = due;
+        el("reviewBtn").textContent = due ? `开始复习（${due}）` : "错题复习";
+        el("startBtn").textContent = save.completedAt ? "再次挑战 ▶" : "开始第一关 ▶";
+        updateSoundUI();
+      }
+
+      function updateSoundUI() {
+        el("soundOnIcon").hidden = !sound;
+        el("soundOffIcon").hidden = sound;
+        el("soundBtn").setAttribute("aria-label", sound ? "关闭音效" : "开启音效");
+      }
+
+      function ensureAudio() {
+        if (!audioCtx) {
+          const AC = window.AudioContext || window.webkitAudioContext;
+          if (AC) audioCtx = new AC();
+        }
+        if (audioCtx?.state === "suspended") audioCtx.resume();
+      }
+
+      function tone(freq, duration = .08, type = "square", gain = .045, delay = 0) {
+        if (!sound) return;
+        ensureAudio();
+        if (!audioCtx) return;
+        const osc = audioCtx.createOscillator();
+        const vol = audioCtx.createGain();
+        const start = audioCtx.currentTime + delay;
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, start);
+        vol.gain.setValueAtTime(gain, start);
+        vol.gain.exponentialRampToValueAtTime(.001, start + duration);
+        osc.connect(vol).connect(audioCtx.destination);
+        osc.start(start);
+        osc.stop(start + duration);
+      }
+
+      function sfx(name) {
+        if (name === "click") tone(220, .05, "square", .025);
+        if (name === "good") { tone(330,.08); tone(494,.1,"square",.045,.07); tone(659,.13,"square",.04,.15); }
+        if (name === "bad") { tone(150,.12,"sawtooth",.04); tone(105,.16,"sawtooth",.035,.09); }
+        if (name === "victory") [262,330,392,523].forEach((f,i)=>tone(f,.18,"square",.04,i*.1));
+      }
+
+      function buzz(pattern) { if (navigator.vibrate) navigator.vibrate(pattern); }
+
+      function toast(msg) {
+        clearTimeout(toastTimer);
+        el("toast").textContent = msg;
+        el("toast").classList.add("show");
+        toastTimer = setTimeout(() => el("toast").classList.remove("show"), 2200);
+      }
+
+      function start(modeName = "normal") {
+        mode = modeName;
+        questionIndex = -1;
+        cardIndex = 0;
+        attempts = 0;
+        firstTry = 0;
+        totalAttempts = 0;
+        enemyHp = 100;
+        playerHp = 100;
+        stimulus = 25;
+        fatigue = 15;
+        technique = 80;
+        locked = false;
+        sfx("click");
+        if (mode === "review") {
+          beginQuestions();
+        } else {
+          showScreen("storyScreen");
+        }
+      }
+
+      function startPretest() {
+        questionIndex = -1;
+        showScreen("gameScreen");
+        renderQuestion(pretest, true);
+      }
+
+      function renderQuestion(q, isPretest = false) {
+        locked = false;
+        attempts = 0;
+        el("stageName").textContent = q.stage;
+        el("stageCounter").textContent = isPretest ? "预判" : `${questionIndex + 1} / ${questions.length}`;
+        el("questionKicker").textContent = q.kicker;
+        el("questionText").textContent = q.text;
+        el("feedback").hidden = true;
+        el("nextBtn").hidden = true;
+        const choices = el("choices");
+        choices.innerHTML = "";
+        q.options.forEach((option, index) => {
+          const btn = document.createElement("button");
+          btn.type = "button";
+          btn.className = "choice-btn";
+          btn.dataset.index = index;
+          btn.innerHTML = `<span class="choice-key">${index+1}</span><span>${option}</span>`;
+          btn.addEventListener("click", () => choose(index, btn, q, isPretest));
+          choices.appendChild(btn);
+        });
+        updateHud();
+        announce(q.text);
+      }
+
+      function choose(index, btn, q, isPretest) {
+        if (locked || btn.disabled) return;
+        sfx("click");
+        attempts++;
+        if (!isPretest) totalAttempts++;
+        const correct = index === q.correct;
+        applyEffects(q.effects[index]);
+
+        if (isPretest) {
+          locked = true;
+          [...el("choices").children].forEach(b => b.disabled = true);
+          btn.classList.add(index === q.correct ? "correct" : "wrong");
+          showFeedback("判断已封存", q.explain, "good");
+          el("nextBtn").textContent = "领取知识卡 ▶";
+          el("nextBtn").hidden = false;
+          el("nextBtn").onclick = showLearning;
+          return;
+        }
+
+        if (correct) {
+          locked = true;
+          if (attempts === 1) firstTry++;
+          btn.classList.add("correct");
+          [...el("choices").children].forEach(b => b.disabled = true);
+          enemyHp = Math.max(0, enemyHp - q.damage);
+          showFeedback("有效攻击！", q.success, "good");
+          sfx(questionIndex === questions.length - 1 ? "victory" : "good");
+          buzz(35);
+          triggerAttack(questionIndex === questions.length - 1);
+          el("nextBtn").textContent = questionIndex === questions.length - 1 ? "查看通关报告 ▶" : "下一回合 ▶";
+          el("nextBtn").hidden = false;
+          el("nextBtn").onclick = nextQuestion;
+        } else {
+          btn.classList.add("wrong");
+          btn.disabled = true;
+          playerHp = Math.max(20, playerHp - (attempts === 1 ? 14 : 7));
+          sfx("bad");
+          buzz([30,45,30]);
+          triggerHit();
+          const explanation = q.wrong[index] || "再看一次题干，找出更能兼顾刺激与疲劳的选择。";
+          if (attempts >= 2) {
+            const correctBtn = el("choices").children[q.correct];
+            correctBtn.classList.add("correct");
+            showFeedback("纠错提示", `${explanation} 正确方向已经标出，请点击它完成本回合。`, "bad");
+          } else {
+            showFeedback("疲劳兽反击", `${explanation} 换一个判断。`, "bad");
+          }
+        }
+        updateHud();
+      }
+
+      function applyEffects(e) {
+        stimulus = clamp(stimulus + e.s);
+        fatigue = clamp(fatigue + e.f);
+        technique = clamp(technique + e.t);
+        updateHud();
+      }
+
+      function clamp(v) { return Math.max(0, Math.min(100, v)); }
+
+      function showFeedback(title, text, kind) {
+        const box = el("feedback");
+        box.className = `feedback ${kind}`;
+        box.innerHTML = `<strong>${title}</strong>${text}`;
+        box.hidden = false;
+      }
+
+      function showLearning() {
+        sfx("click");
+        showScreen("learnScreen");
+        cardIndex = 0;
+        renderCard();
+      }
+
+      function renderCard() {
+        const c = knowledgeCards[cardIndex];
+        el("knowledgeCard").innerHTML = `<span class="card-num">0${cardIndex+1}</span><h2>${c.title}</h2><p>${c.body}</p><div class="formula">${c.formula}</div>`;
+        el("cardDots").innerHTML = knowledgeCards.map((_,i)=>`<i class="${i===cardIndex?"active":""}" aria-hidden="true"></i>`).join("");
+        el("cardNextBtn").textContent = cardIndex === knowledgeCards.length - 1 ? "进入战斗" : "下一张";
+      }
+
+      function nextCard() {
+        sfx("click");
+        if (cardIndex < knowledgeCards.length - 1) {
+          cardIndex++;
+          renderCard();
+        } else beginQuestions();
+      }
+
+      function beginQuestions() {
+        questionIndex = 0;
+        showScreen("gameScreen");
+        renderQuestion(questions[questionIndex]);
+      }
+
+      function nextQuestion() {
+        sfx("click");
+        if (questionIndex >= questions.length - 1) {
+          finish();
+          return;
+        }
+        questionIndex++;
+        renderQuestion(questions[questionIndex]);
+      }
+
+      function finish() {
+        enemyHp = 0;
+        updateHud();
+        const accuracy = firstTry / questions.length;
+        const attemptPenalty = Math.max(0, totalAttempts - questions.length) * 4;
+        const mastery = clamp(Math.round(62 + accuracy * 38 - attemptPenalty));
+        const rank = mastery >= 92 ? "S · 科学裁决者" : mastery >= 80 ? "A · 判断可靠" : mastery >= 68 ? "B · 基础掌握" : "C · 建议复训";
+
+        if (mode === "review") {
+          dueReviews().forEach(r => r.done = true);
+        } else {
+          save.completedAt = new Date().toISOString();
+          if (!save.completionDays.includes(localDay())) save.completionDays.push(localDay());
+          if (!save.reviews.length) {
+            const base = new Date();
+            base.setHours(9,0,0,0);
+            save.reviews = [1,3,7].map(days => ({ interval: days, due: base.getTime() + days * DAY, done: false }));
+          }
+        }
+        save.best = Math.max(save.best || 0, mastery);
+        writeSave();
+
+        el("masteryScore").textContent = `${mastery}%`;
+        el("firstTryScore").textContent = `${firstTry}/${questions.length}`;
+        el("focusScore").textContent = playerHp;
+        el("rankText").textContent = rank;
+        el("reviewLine").textContent = mode === "review"
+          ? "本次到期复习已完成。主动回忆比重复浏览更能检验你是否真正掌握。"
+          : "记忆复训已安排：第 1、3、7 天重新判断关键情境，进度只保存在这台设备。";
+        setTimeout(() => showScreen("resultScreen"), 450);
+      }
+
+      function updateHud() {
+        el("playerHpBar").style.width = `${playerHp}%`;
+        el("enemyHpBar").style.width = `${enemyHp}%`;
+        el("playerHpText").textContent = playerHp;
+        el("enemyHpText").textContent = enemyHp;
+        [["stimulus",stimulus],["fatigue",fatigue],["technique",technique]].forEach(([name,val]) => {
+          el(`${name}Value`).textContent = val;
+          el(`${name}Bar`).style.width = `${val}%`;
+        });
+      }
+
+      function announce(text) { el("liveRegion").textContent = text; }
+
+      async function shareResult() {
+        const text = `我在 HERACLES LAB · SCIENCE QUEST 通关了《增肌训练每组都要力竭吗？》，掌握度 ${el("masteryScore").textContent}。\n科学不是背诵，是做出判断。`;
+        try {
+          if (navigator.share) await navigator.share({title:"HERACLES LAB · SCIENCE QUEST", text});
+          else if (navigator.clipboard) { await navigator.clipboard.writeText(text); toast("通关成绩已复制"); }
+          else toast("截图即可分享通关成绩");
+        } catch (err) {
+          if (err?.name !== "AbortError") toast("截图即可分享通关成绩");
+        }
+      }
+
+      function openSources() {
+        sfx("click");
+        const dialog = el("sourcesDialog");
+        if (typeof dialog.showModal === "function") dialog.showModal();
+        else dialog.setAttribute("open", "");
+      }
+
+      /* Canvas pixel arena */
+      const canvas = el("arena");
+      const ctx = canvas.getContext("2d");
+      ctx.imageSmoothingEnabled = false;
+      let animation = {type:"idle", start:0, boss:false};
+
+      function triggerAttack(boss) {
+        animation = {type:"attack", start:performance.now(), boss};
+        el("arenaFlash").classList.remove("go");
+        void el("arenaFlash").offsetWidth;
+        setTimeout(() => el("arenaFlash").classList.add("go"), 260);
+      }
+
+      function triggerHit() { animation = {type:"hit", start:performance.now(), boss:false}; }
+
+      function drawArena(now) {
+        const t = now / 180;
+        const elapsed = now - animation.start;
+        if (animation.type !== "idle" && elapsed > 780) animation = {type:"idle", start:now, boss:false};
+        ctx.clearRect(0,0,640,360);
+        drawBackground(t);
+
+        let heroX = 122;
+        let monsterX = 480;
+        if (animation.type === "attack" && elapsed < 330) heroX += Math.min(84, elapsed / 4);
+        if (animation.type === "hit" && elapsed < 360) heroX += Math.sin(elapsed / 24) * 9;
+        if (animation.type === "attack" && elapsed > 300 && elapsed < 560) monsterX += Math.sin(elapsed / 18) * (animation.boss ? 15 : 9);
+
+        drawHero(heroX, 220 + Math.sin(t)*2, animation.type, elapsed);
+        drawMonster(monsterX, 205 + Math.sin(t*.75)*3, animation.type, elapsed);
+
+        if (animation.type === "attack" && elapsed > 170 && elapsed < 520) {
+          const p = (elapsed - 170) / 350;
+          drawPlate(205 + p * 260, 195 - Math.sin(p*Math.PI)*70, animation.boss ? 22 : 16);
+        }
+        requestAnimationFrame(drawArena);
+      }
+
+      function drawBackground(t) {
+        ctx.fillStyle = "#172238"; ctx.fillRect(0,0,640,360);
+        ctx.fillStyle = "#202f4b";
+        for (let x=0;x<640;x+=80) ctx.fillRect(x,0,4,235);
+        ctx.fillStyle = "#344665"; ctx.fillRect(0,54,640,8);
+        ctx.fillStyle = "#806e4e"; ctx.fillRect(34,76,44,160); ctx.fillRect(560,76,44,160);
+        ctx.fillStyle = "#ae9a6a"; ctx.fillRect(42,76,10,160); ctx.fillRect(568,76,10,160);
+        ctx.fillStyle = "#51452f"; ctx.fillRect(26,66,60,14); ctx.fillRect(552,66,60,14);
+        ctx.fillStyle = "#28334b"; ctx.fillRect(0,236,640,124);
+        ctx.fillStyle = "#39455c";
+        for (let y=244;y<360;y+=28) for (let x=(y/28)%2?0:24;x<640;x+=48) ctx.fillRect(x,y,44,3);
+        ctx.fillStyle = "#ffbd3d";
+        [[110,34],[315,88],[526,29],[408,44]].forEach(([x,y],i)=>ctx.fillRect(x,y+Math.sin(t+i)*2,4,4));
+        ctx.fillStyle = "rgba(255,189,61,.12)"; ctx.fillRect(270,18,100,170);
+      }
+
+      function drawHero(x,y,type,elapsed) {
+        ctx.save(); ctx.translate(Math.round(x),Math.round(y));
+        const arm = type === "attack" && elapsed < 380 ? -16 : 0;
+        ctx.fillStyle="#161b28"; ctx.fillRect(-23,86,18,30); ctx.fillRect(8,86,18,30);
+        ctx.fillStyle="#3b8ab9"; ctx.fillRect(-29,33,58,59);
+        ctx.fillStyle="#172033"; ctx.fillRect(-29,60,58,8);
+        ctx.fillStyle="#d49b68"; ctx.fillRect(-17,2,34,32);
+        ctx.fillStyle="#6f4430"; ctx.fillRect(-17,26,34,10);
+        ctx.fillStyle="#1b1512"; ctx.fillRect(-10,17,6,5); ctx.fillRect(7,17,6,5);
+        ctx.fillStyle="#d49b68"; ctx.fillRect(-41+arm,38,14,46); ctx.fillRect(27-arm,38,14,46);
+        ctx.fillStyle="#172033"; ctx.fillRect(-43+arm,69,18,15); ctx.fillRect(25-arm,69,18,15);
+        ctx.restore();
+      }
+
+      function drawMonster(x,y,type,elapsed) {
+        ctx.save(); ctx.translate(Math.round(x),Math.round(y));
+        const hurt = type === "attack" && elapsed > 300 && elapsed < 590;
+        ctx.fillStyle = hurt ? "#ed5d68" : "#7353c7";
+        ctx.fillRect(-47,25,94,68); ctx.fillRect(-35,7,70,25);
+        ctx.fillStyle="#4a318f"; ctx.fillRect(-55,39,14,52); ctx.fillRect(41,39,14,52);
+        ctx.fillStyle="#241847"; ctx.fillRect(-35,90,26,27); ctx.fillRect(10,90,26,27);
+        ctx.fillStyle="#ffbd3d"; ctx.fillRect(-23,31,12,9); ctx.fillRect(12,31,12,9);
+        ctx.fillStyle="#172033"; ctx.fillRect(-19,33,5,5); ctx.fillRect(15,33,5,5);
+        ctx.fillStyle="#1c1237"; ctx.fillRect(-17,59,35,10);
+        ctx.fillStyle="#ede6ff"; ctx.fillRect(-12,59,6,9); ctx.fillRect(8,59,6,9);
+        ctx.fillStyle="#ad91f1"; ctx.fillRect(-44,15,14,14); ctx.fillRect(31,15,14,14);
+        ctx.restore();
+      }
+
+      function drawPlate(x,y,r) {
+        ctx.save(); ctx.translate(Math.round(x),Math.round(y));
+        ctx.fillStyle="#7e2430"; ctx.fillRect(-r,-r,r*2,r*2);
+        ctx.fillStyle="#ed5d68"; ctx.fillRect(-r+4,-r+4,r*2-8,r*2-8);
+        ctx.fillStyle="#172033"; ctx.fillRect(-5,-5,10,10);
+        ctx.restore();
+      }
+
+      /* Events */
+      el("soundBtn").addEventListener("click", () => { sound = !sound; writeSave(); updateSoundUI(); if (sound) sfx("good"); });
+      el("startBtn").addEventListener("click", () => start("normal"));
+      el("reviewBtn").addEventListener("click", () => {
+        if (dueReviews().length) start("review");
+        else if (save.completedAt) { toast("下一次复习尚未到期，也可以再次挑战巩固"); start("normal"); }
+        else toast("先完成第一关，错题会自动进入复习");
+      });
+      el("pretestBtn").addEventListener("click", startPretest);
+      el("cardNextBtn").addEventListener("click", nextCard);
+      el("shareBtn").addEventListener("click", shareResult);
+      el("replayBtn").addEventListener("click", () => start("normal"));
+      el("homeBtn").addEventListener("click", () => { refreshHome(); showScreen("homeScreen"); });
+      document.querySelectorAll("[data-open-sources]").forEach(b => b.addEventListener("click", openSources));
+      el("closeSourcesBtn").addEventListener("click", () => el("sourcesDialog").close());
+      el("sourcesDialog").addEventListener("click", e => {
+        const rect = e.currentTarget.getBoundingClientRect();
+        if (e.clientX < rect.left || e.clientX > rect.right || e.clientY < rect.top || e.clientY > rect.bottom) e.currentTarget.close();
+      });
+      document.addEventListener("keydown", e => {
+        if (!el("gameScreen").hidden && ["1","2","3"].includes(e.key)) {
+          const btn = el("choices").children[Number(e.key)-1];
+          if (btn && !btn.disabled) btn.click();
+        }
+      });
+
+      refreshHome();
+      updateHud();
+      requestAnimationFrame(drawArena);
+    })();
+  </script>
+</body>
+</html>
