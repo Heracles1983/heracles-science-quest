@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#141b18">
+  <meta name="description" content="进入健身秘典的奇幻牌桌，用科学击破健身误区。探索力量、营养与恢复，收集属于你的知识卡牌。">
+  <title>健身秘典 · HERACLES LAB</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./questions.js" defer></script>
+  <script src="./game.js" defer></script>
+</head>
+<body>
+  <svg class="icon-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs>
+    <symbol id="i-sword" viewBox="0 0 24 24"><path d="m15 3 6 0 0 6-11 11-6-6L15 3Zm-7 11 2 2M3 16l5 5m-5 0 4-4"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><rect x="8" y="3" width="12" height="17" rx="2"/><path d="M5 6 2 7l4 15 9-2M12 8h4m-4 4h4m-4 4h2"/></symbol>
+    <symbol id="i-bolt" viewBox="0 0 24 24"><path d="m14 2-9 12h7l-2 8 9-12h-7l2-8Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 3S4 2 4 12c0 8 13 10 15-1l1-8ZM3 21 15 9"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 15A9 9 0 0 1 9 4a9 9 0 1 0 11 11Z"/><path d="M18 3v4m-2-2h4"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="m11 4-6 5H2v6h3l6 5V4Zm4 4c3 2 3 6 0 8m3-11c5 4 5 10 0 14"/></symbol>
+    <symbol id="i-help" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9a3 3 0 0 1 6 0c0 2-3 2-3 4m0 3v.1"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h16m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5M4 17v-5h5"/><path d="M5 8a8 8 0 0 1 14-2l1 6M4 12l1 6a8 8 0 0 0 14-2"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3 7 7 1-5 5 1 7-6-3-6 3 1-7-5-5 7-1 3-7Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M6 18 18 6"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M20 5c-3-3-7-1-8 1-1-2-5-4-8-1-6 6 8 15 8 15s14-9 8-15Z"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="m7 3-5 6 10 13L22 9l-5-6H7ZM2 9h20M7 3l5 19 5-19M7 9l5-6 5 6"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6v15M12 6C8 2 2 4 2 4v15s6-2 10 2c4-4 10-2 10-2V4s-6-2-10 2Z"/></symbol>
+  </defs></svg>
+  <div class="page-glow" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="健身秘典首页"><span class="brand-seal"><svg><use href="#i-bolt"/></svg></span><span><b>HERACLES</b><small>LAB · 健身秘典</small></span></a>
+    <nav class="main-nav" aria-label="主导航"><button id="nav-arena" class="active"><svg><use href="#i-sword"/></svg>冒险牌桌</button><button id="nav-collection"><svg><use href="#i-cards"/></svg>知识图鉴<span id="collection-count" class="nav-count">0</span></button></nav>
+    <div class="header-actions"><button class="icon-button" id="sound-toggle" aria-label="开启游戏音效" aria-pressed="false" title="音效"><svg><use href="#i-volume"/></svg></button><button class="icon-button" id="help-button" aria-label="查看玩法" title="玩法说明"><svg><use href="#i-help"/></svg></button></div>
+  </header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow"><span></span> KNOWLEDGE IS YOUR SUPERPOWER</p><h1>力量，源于<span>知识。</span></h1><p class="heading-copy">踏入科学的牌桌，击破健身的迷思。</p></div><div class="traveler-badge"><svg><use href="#i-book"/></svg><div><span>你的知识旅程</span><b><em id="learned-count">0</em> <small>/ 18 张秘典</small></b></div></div></div>
+    <section id="arena-view" aria-label="冒险牌桌">
+      <div class="adventure-layout">
+        <aside class="adventure-sidebar">
+          <p class="sidebar-label">冒险章节 <span>THE ADVENTURE</span></p>
+          <div id="chapter-list" class="chapter-list"></div>
+          <div class="sidebar-divider"><span>◆</span></div>
+          <div class="quest-box"><div class="quest-icon"><svg><use href="#i-star"/></svg></div><p class="quest-label">学徒的第一步</p><h3>收集科学的力量</h3><p>解锁 18 张知识卡牌，<br>成为自己的训练导师。</p><div class="quest-track"><span id="quest-progress-fill"></span></div><div class="quest-track-label"><span>秘典收集进度</span><b id="quest-progress">0 / 18</b></div></div>
+          <button class="review-button" id="review-button"><svg><use href="#i-refresh"/></svg><span>重访错题秘境</span><svg><use href="#i-arrow"/></svg></button>
+          <p class="local-note"><span></span>旅程自动保存在此设备</p>
+        </aside>
+        <div class="arena-shell">
+          <div class="arena-titlebar"><div><p id="chapter-kicker" class="eyebrow">CHAPTER I · 力量试炼</p><h2 id="chapter-title">力量试炼</h2></div><div class="round-pill"><span class="live-dot"></span><span id="round-label">回合 1 / 6</span></div></div>
+          <div id="game-board" class="game-board">
+            <span class="board-corner corner-tl" aria-hidden="true"></span><span class="board-corner corner-tr" aria-hidden="true"></span><span class="board-corner corner-bl" aria-hidden="true"></span><span class="board-corner corner-br" aria-hidden="true"></span>
+            <div class="board-vignette" aria-hidden="true"></div>
+            <div class="boss-row"><div class="boss-hero"><div id="boss-portrait" class="hero-portrait boss-portrait art-4"><span class="portrait-gem"><svg><use href="#i-heart"/></svg><b id="boss-hp">40</b></span></div><div class="boss-info"><span class="tiny-label">迷思守卫</span><h3 id="boss-name">蛮力石像</h3><p id="boss-subtitle">用科学，击破盲目的蛮力</p><div class="health-track boss-health"><span id="boss-health-fill"></span></div><span class="hp-caption">生命 <span id="boss-maxhp">40</span></span></div></div><button id="battle-reset" class="board-reset" aria-label="重新开始当前章节" title="重新开始本章"><svg><use href="#i-refresh"/></svg></button></div>
+            <div class="challenge"><div class="challenge-ornament" aria-hidden="true"><i></i><svg><use href="#i-sword"/></svg><i></i></div><p id="question-tag" class="question-tag">力量训练 · 科学决策</p><h3 id="question-title">成长的秘密</h3><p id="question-prompt">想要肌肉持续成长，你该如何升级训练？</p></div>
+            <div class="hand-area"><div class="hand-hint"><span></span><p id="turn-hint">选择一张知识卡，回应守卫的挑战</p><span></span></div><div id="hand" class="hand" aria-label="可选择的知识卡牌"></div></div>
+            <div class="skill-tray"><div class="skill-tray-heading"><span>英雄秘术</span><p id="skill-hint" aria-live="polite">出牌前可施放秘术，留 1 点能量给知识卡</p></div><div id="skill-panel" class="skill-panel" aria-label="英雄主动技能"><button type="button" class="skill-button insight" data-skill="insight" title="消耗1能量，排除一张错误答案，每局2次"><span class="skill-icon"><svg><use href="#i-book"/></svg></span><span class="skill-copy"><b>智慧洞察</b><small>排除一个错误选项</small></span><span class="skill-resource"><i>1 能量</i><small>剩 <span data-remaining>2</span> 次</small></span><kbd>Q</kbd></button><button type="button" class="skill-button guard" data-skill="guard" title="消耗1能量，获得4点护盾，每局2次"><span class="skill-icon"><svg><use href="#i-shield"/></svg></span><span class="skill-copy"><b>科学屏障</b><small>抵消 4 点反击伤害</small></span><span class="skill-resource"><i>1 能量</i><small>剩 <span data-remaining>2</span> 次</small></span><kbd>W</kbd></button><button type="button" class="skill-button restore" data-skill="restore" title="消耗2能量，恢复6点英雄生命，每局1次"><span class="skill-icon"><svg><use href="#i-leaf"/></svg></span><span class="skill-copy"><b>恢复之息</b><small>回复 6 点英雄生命</small></span><span class="skill-resource"><i>2 能量</i><small>剩 <span data-remaining>1</span> 次</small></span><kbd>E</kbd></button></div></div>
+            <div id="feedback" class="feedback hidden" aria-live="polite"><div class="feedback-heading"><svg><use href="#i-book"/></svg><h4 id="feedback-title"></h4></div><p id="feedback-copy"></p><a id="feedback-source" target="_blank" rel="noopener noreferrer"></a></div>
+            <div class="player-row"><div class="player-hero"><div class="hero-portrait player-portrait art-0"><span class="portrait-gem"><svg><use href="#i-heart"/></svg><b id="player-hp">30</b></span></div><div class="player-info"><span class="tiny-label">你的英雄</span><h3>求知学徒</h3><div class="health-track player-health"><span id="player-health-fill"></span></div></div></div><div class="energy-display"><div class="energy-label"><svg><use href="#i-gem"/></svg>行动能量 <b><span id="energy-count">3</span><span> / 3</span></b></div><div id="energy-gems" class="energy-gems"><i></i><i></i><i></i></div></div><button id="next-turn" class="next-turn" disabled><span>等待出牌</span><svg><use href="#i-arrow"/></svg></button></div>
+            <div id="attack-fx" class="attack-fx" aria-hidden="true"></div>
+          </div>
+          <div class="arena-bottom"><p><svg><use href="#i-shield"/></svg>以科学为盾，以知识为剑</p><div><span class="shield-stat"><svg><use href="#i-shield"/></svg>护盾 <b id="shield-count">0</b></span><i></i><span>连击 <b id="combo-count">0</b></span><i></i><span>积分 <b id="battle-score">0</b></span></div></div>
+        </div>
+      </div>
+      <div class="feature-strip"><div><span class="feature-number">01</span><p><b>把知识打成一张好牌</b><span>训练、营养、恢复，三大科学秘境</span></p></div><div><span class="feature-number">02</span><p><b>每一次出牌都有收获</b><span>即时科普解析，附上可信来源</span></p></div><div><span class="feature-number">03</span><p><b>胜负之外，记住答案</b><span>知识收藏与错题重访，让理解留下来</span></p></div></div>
+    </section>
+    <section id="collection-view" class="hidden collection-view" aria-label="知识图鉴"><div class="collection-heading"><div><p class="eyebrow">YOUR GROWING GRIMOIRE</p><h2>知识图鉴</h2><p>每一次挑战，都在为你的训练积攒力量。</p></div><div id="collection-filters" class="collection-filters"></div></div><div id="collection-grid" class="collection-grid"></div></section>
+  </main>
+  <footer><span>HERACLES LAB</span><p>让运动科学，成为你的日常力量。</p><small>科普内容用于一般学习 · 游戏数值仅用于玩法</small></footer>
+  <dialog id="help-dialog" class="help-dialog"><button id="help-close" class="dialog-close icon-button" aria-label="关闭玩法说明"><svg><use href="#i-close"/></svg></button><p class="eyebrow">WELCOME, APPRENTICE</p><h2>你的第一场知识对决</h2><p class="dialog-intro">你不需要懂卡牌游戏，只需要带上好奇心。</p><div class="help-steps"><div><span>1</span><p><b>选择秘境，迎接挑战</b>力量、营养、恢复三章，每章 6 道题，可自由探索。每回合从三张卡中选出科学的答案。</p></div><div><span>2</span><p><b>用知识，击破迷思</b>答对造成 10 点伤害，每连续答对 3 次额外造成 5 点伤害；答错受到 8 点反击伤害，护盾优先抵消。英雄生命 30，守卫生命 40。</p></div><div><span>3</span><p><b>分配能量，选择秘术</b>每回合恢复 3 点能量，知识卡消耗 1 点。出牌前可用智慧洞察排除一张错误卡，或用屏障、恢复保护英雄。秘术每局有次数限制，须留 1 点能量出牌。</p></div><div><span>4</span><p><b>读懂解析，收集秘典</b>出牌后阅读解释，再进入下一回合。守卫被击败后，可继续学习剩余题。知识、错题和当前对局都自动保存，刷新后可接着玩。</p></div></div><div class="keyboard-note"><span>键盘也能施法</span><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><span>选择卡牌</span><kbd>Q</kbd><kbd>W</kbd><kbd>E</kbd><span>使用秘术</span><kbd>Space</kbd><span>下一回合</span></div><p class="help-footnote">进度保存在当前浏览器。生命、伤害、护盾、恢复和能量均为游戏设定。</p></dialog>
+  <dialog id="result-dialog" class="result-dialog"></dialog>
+  <div id="toast" class="toast" role="status"></div>
+</body>
+</html>
