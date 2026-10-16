@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+ <title id="title">坐姿绳索划船动作示意</title><desc id="desc">侧视人物坐在凳上面对低位绳索，实线为把手拉回躯干旁，虚线为手臂向前回程位置。金箭头向躯干表示水平拉动，腰背保持稳定。</desc>
+ <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+ <style>.body{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.4}.equipment{fill:none;stroke:#bca16b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px system-ui,sans-serif;letter-spacing:.7px}.path{fill:none;stroke:#d4b674;stroke-width:1.8;marker-end:url(#arrow)}</style>
+ <text x="24" y="28" fill="#e9e2cc" font-size="12" font-family="system-ui,sans-serif" letter-spacing="2">坐姿绳索划船</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角</text>
+ <path d="M57 225H462" stroke="#c5b880" opacity=".22"/>
+ <g class="equipment"><path d="M103 183H225M121 188V221M207 188V221M383 220V114M371 220H410M323 183 339 211"/><circle cx="383" cy="159" r="8"/><path d="M376 159 211 144" stroke-width="1.6"/><path d="M209 136 206 151 220 152"/></g>
+ <path d="M174 167 240 182 300 205M182 168 250 174 322 190" class="body"/><path d="M294 208 310 199M317 194 332 183" stroke="#e8dfca" stroke-width="9" stroke-linecap="round"/>
+ <path d="M164 101Q158 129 164 159L174 176 197 172 188 142 189 106Z" fill="#c7cbb5"/><path d="M165 109 177 114 185 150 169 153Z" fill="#a66358"/><circle cx="176" cy="81" r="16" fill="#e8dfca"/>
+ <path d="M183 111 143 146 209 145" class="body"/><path d="M183 111 226 130 275 145" class="ghost"/>
+ <path d="M274 136 272 151 285 152" class="equipment" opacity=".45" stroke-dasharray="3 4"/>
+ <path d="M277 108Q246 97 217 118" class="path"/>
+ <path d="M134 94V156" stroke="#d4b674" opacity=".4" stroke-dasharray="3 5"/>
+ <text x="55" y="74" class="note">腰背保持稳定</text><path d="M131 79H151L166 109" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="326" y="79" class="note">肘部向后</text><path d="M319 86H252L163 145" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="260" y="253" text-anchor="middle" class="note">实线：拉回 · 虚线：回程 · 肩胛骨自然配合移动</text>
+</svg>

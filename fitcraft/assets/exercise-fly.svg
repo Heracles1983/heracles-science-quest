@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+  <title id="title">哑铃飞鸟胸前合拢路径示意</title>
+  <desc id="desc">仰卧人物的正面投影视图，胸大肌以酒红色标示。实线为双臂展开且肘部微屈的位置，虚线为双臂向胸前合拢的投影位置。金色弧线提示抱拢的动作。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <linearGradient id="body" x1="0" x2="1" y2="1"><stop stop-color="#f0e6cf"/><stop offset="1" stop-color="#bdc0ac"/></linearGradient>
+  </defs>
+  <style>.bone{fill:none;stroke:#e8dfca;stroke-width:13;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.45}.equipment{fill:none;stroke:#bca16b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px system-ui,sans-serif;letter-spacing:1px}.path{fill:none;stroke:#d4b674;stroke-width:1.7;stroke-linecap:round;marker-end:url(#arrow)}@media(prefers-reduced-motion:no-preference){.path{stroke-dasharray:4 5;animation:flow 2.8s linear infinite}@keyframes flow{to{stroke-dashoffset:-18}}}</style>
+  <text x="24" y="28" fill="#e9e2cc" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2">哑铃飞鸟</text>
+  <text x="496" y="28" text-anchor="end" class="note" opacity=".65">仰卧 · 正面投影</text>
+  <rect x="237" y="77" width="46" height="151" rx="13" fill="#bca16b" fill-opacity=".08" stroke="#bca16b" stroke-width="2" stroke-opacity=".4"/>
+  <path d="M246 83V94M274 83V94" class="bone" stroke-width="11"/>
+  <path d="M239 88Q260 95 281 88L307 101Q314 115 302 144L286 179 288 204Q260 217 232 204L234 179 218 144Q206 115 213 101Z" fill="url(#body)"/>
+  <path d="M233 205 230 225M287 205 290 225" class="bone" stroke-width="21"/>
+  <ellipse cx="260" cy="63" rx="17" ry="21" fill="url(#body)"/>
+  <path d="M245 56Q246 40 260 41T276 56" fill="none" stroke="#6c7868" stroke-width="4" stroke-linecap="round"/>
+  <path d="M252 77Q260 81 268 77" fill="none" stroke="#8e9a83" stroke-width="1.3" stroke-linecap="round"/>
+  <path d="M216 104Q234 98 257 111L256 143Q237 151 221 132Z" fill="#9e5260"/>
+  <path d="M304 104Q286 98 263 111L264 143Q283 151 299 132Z" fill="#9e5260"/>
+  <path d="M224 108 252 117M222 115 253 125M227 127 252 134M296 108 268 117M298 115 267 125M293 127 268 134" stroke="#d59b9c" stroke-width="1" opacity=".45"/>
+  <path d="M260 111V148M241 164Q260 169 279 164M242 183Q260 188 278 183" fill="none" stroke="#88977e" stroke-width="1.1" opacity=".5"/>
+  <path d="M215 109 159 130 108 108M305 109 361 130 412 108" class="bone"/>
+  <circle cx="159" cy="130" r="4" fill="#a5ad97"/><circle cx="361" cy="130" r="4" fill="#a5ad97"/>
+  <g class="equipment"><path d="M108 89V121M412 89V121"/><path d="M98 90H118M96 96H120M98 120H118M96 114H120M402 90H422M400 96H424M402 120H422M400 114H424" stroke-width="5"/></g>
+  <path d="M215 109 229 140 247 113M305 109 291 140 273 113" class="ghost"/>
+  <g class="equipment" opacity=".45" stroke-dasharray="3 4"><path d="M247 91V119M273 91V119"/><path d="M239 92H254M237 98H256M239 118H254M237 112H256M266 92H281M264 98H283M266 118H281M264 112H283" stroke-width="2.5"/></g>
+  <path d="M121 83Q175 41 231 83M399 83Q345 41 289 83" class="path"/>
+  <text x="73" y="178" class="note">肘部微屈</text><path d="M132 170 153 141" stroke="#bca16b" opacity=".5"/>
+  <text x="358" y="178" class="note">像拥抱一样合拢</text><path d="M367 166 370 143" stroke="#bca16b" opacity=".5"/>
+  <text x="260" y="252" text-anchor="middle" class="note">动作路径示意 · 以舒适可控的幅度练习</text>
+</svg>

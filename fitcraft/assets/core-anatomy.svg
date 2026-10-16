@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="650" viewBox="0 0 620 650" fill="none" role="img" aria-labelledby="core-title core-desc">
+  <title id="core-title">核心腹壁解剖：腹直肌、腹外斜肌、腹内斜肌与深层腹横肌</title>
+  <desc id="core-desc">躯干前面观。金铜色腹直肌在腹白线两侧，酒红色腹外斜肌分布于两侧；左下小窗口移除腹外斜肌以展示腹内斜肌。右下独立深层窗口移除腹外斜肌和腹内斜肌，展示横向纤维的腹横肌。核心还包括图中未完整呈现的背侧肌群、膈肌和盆底。</desc>
+  <defs>
+    <linearGradient id="body" x1="180" y1="155" x2="420" y2="580" gradientUnits="userSpaceOnUse"><stop stop-color="#58604D"/><stop offset=".5" stop-color="#344234"/><stop offset="1" stop-color="#25352B"/></linearGradient>
+    <linearGradient id="rectus" x1="270" y1="280" x2="350" y2="510" gradientUnits="userSpaceOnUse"><stop stop-color="#D9AC73"/><stop offset=".5" stop-color="#B78054"/><stop offset="1" stop-color="#956342"/></linearGradient>
+    <linearGradient id="oblique" x1="200" y1="300" x2="270" y2="500" gradientUnits="userSpaceOnUse"><stop stop-color="#BA7962"/><stop offset="1" stop-color="#813F43"/></linearGradient>
+    <linearGradient id="transverse" x1="450" y1="460" x2="570" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#A1B7A0"/><stop offset="1" stop-color="#5C8674"/></linearGradient>
+    <path id="outer" d="M213 282C207 329 222 377 226 416L221 470 259 506C263 463 255 414 260 364L265 291Z"/>
+    <clipPath id="outerclip"><use href="#outer"/></clipPath>
+    <g id="outer-lines" stroke="#D29D87" stroke-opacity=".57" stroke-width="1.1" clip-path="url(#outerclip)"><path d="M201 290 272 352M202 307 271 369M205 326 270 386M209 346 269 404M214 366 269 423M217 386 269 443M218 407 269 463M218 427 268 483M218 449 268 504"/></g>
+  </defs>
+  <g stroke="#D7B781" stroke-opacity=".06"><path d="M70 74V604M150 74V604M230 74V604M390 74V604M470 74V604M550 74V604M42 112H578M42 192H578M42 272H578M42 352H578M42 432H578M42 512H578M42 592H578"/></g>
+  <path d="M310 69V600" stroke="#D7B781" stroke-opacity=".15" stroke-dasharray="3 7"/>
+  <path d="M270 76C272 110 263 139 244 151L188 175C167 192 163 221 176 256L202 309C218 351 226 388 224 434L209 548C240 573 271 584 310 587C349 584 380 573 411 548L396 434C394 388 402 351 418 309L444 256C457 221 453 192 432 175L376 151C357 139 348 110 350 76" fill="url(#body)" stroke="#94A181" stroke-opacity=".55" stroke-width="1.3"/>
+  <g fill="#4B5B43" stroke="#94A181" stroke-opacity=".27"><path d="M187 176C164 180 150 200 143 231L132 319C130 338 142 347 157 338L179 286 197 226Z"/><path d="M433 176C456 180 470 200 477 231L488 319C490 338 478 347 463 338L441 286 423 226Z"/></g>
+  <path d="M273 91 300 176M347 91 320 176M194 177C237 168 271 174 303 187M426 177C383 168 349 174 317 187" stroke="#BEC2A0" stroke-opacity=".4" stroke-width="3" stroke-linecap="round"/>
+  <g fill="#617054" fill-opacity=".55" stroke="#A3AC84" stroke-opacity=".28"><path d="M301 192C266 180 221 186 202 212L207 251C239 277 269 279 301 261Z"/><path d="M319 192C354 180 399 186 418 212L413 251C381 277 351 279 319 261Z"/></g>
+  <path d="M310 192V272" stroke="#BDBB96" stroke-opacity=".4" stroke-width="9"/>
+  <g stroke="#B5B994" stroke-opacity=".25"><path d="M214 260C228 279 244 290 263 296M211 278C225 299 240 311 258 316M209 298C223 319 239 331 258 337M406 260C392 279 376 290 357 296M409 278C395 299 380 311 362 316M411 298C397 319 381 331 362 337"/></g>
+  <g data-region="obliques" role="button" tabindex="0" aria-label="腹外斜肌，浅层" style="cursor:pointer"><title>腹外斜肌：腹壁较浅层，肌束大体朝向前下内侧</title><use href="#outer" fill="url(#oblique)" stroke="#C58A70" stroke-width="1.2"/><use href="#outer-lines"/><use href="#outer" transform="translate(620 0) scale(-1 1)" fill="url(#oblique)" stroke="#C58A70" stroke-width="1.2"/><use href="#outer-lines" transform="translate(620 0) scale(-1 1)"/></g>
+  <g data-region="rectus" role="button" tabindex="0" aria-label="腹直肌，腹白线两侧" style="cursor:pointer"><title>腹直肌：参与躯干屈曲，并与其他肌群共同控制腰盆</title>
+    <g fill="url(#rectus)" stroke="#E0B785" stroke-opacity=".68" stroke-width="1.1"><path d="M275 278C267 289 265 310 267 330L304 333V278Z"/><path d="M345 278C353 289 355 310 353 330L316 333V278Z"/><path d="M267 339C264 355 264 376 266 391L304 394V342Z"/><path d="M353 339C356 355 356 376 354 391L316 394V342Z"/><path d="M267 401C266 418 269 439 273 452L304 459V404Z"/><path d="M353 401C354 418 351 439 347 452L316 459V404Z"/><path d="M276 463C281 489 290 511 304 523V468Z"/><path d="M344 463C339 489 330 511 316 523V468Z"/></g>
+    <g stroke="#F0D0A0" stroke-width=".9" stroke-opacity=".3"><path d="M280 283 279 327M291 280 292 330M340 283 341 327M329 280 328 330M278 345 278 389M292 345 292 391M342 345 342 389M328 345 328 391M279 406 285 451M292 407 294 455M341 406 335 451M328 407 326 455M287 471 299 513M333 471 321 513"/></g>
+  </g>
+  <path d="M310 277V523" stroke="#DDD0A5" stroke-opacity=".55" stroke-width="3"/>
+  <circle cx="310" cy="408" r="4" fill="#23362A" stroke="#D5BA8A" stroke-opacity=".7"/>
+  <g data-region="obliques" role="button" tabindex="0" aria-label="腹内斜肌，左下局部移除腹外斜肌后展示" style="cursor:pointer"><title>腹内斜肌局部窗口：已移除表面腹外斜肌，肌束方向与外层不同</title><path d="M228 409 254 434 255 491 226 468Z" fill="#B68E69" stroke="#E0BC8B" stroke-width="1.2" stroke-dasharray="4 3"/><path d="M228 450 252 431M227 462 254 443M235 477 255 461M245 485 255 478" stroke="#E4C7A0" stroke-opacity=".65" stroke-width="1.2"/></g>
+  <path d="M226 507C249 521 264 539 282 555M394 507C371 521 356 539 338 555M270 554Q310 574 350 554" stroke="#BDC2A0" stroke-opacity=".3" stroke-width="4" stroke-linecap="round"/>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <g fill="#F0E6D4" font-size="16" font-weight="600"><text x="28" y="306">腹直肌</text><text x="442" y="275">腹外斜肌</text><text x="25" y="497">腹内斜肌</text></g>
+    <g fill="#B9AC8D" font-size="10"><text x="28" y="324">RECTUS ABDOMINIS</text><text x="442" y="294">浅层 · 肌束朝下内方</text><text x="25" y="515">局部移除腹外斜肌</text></g>
+    <g stroke="#D7B781" stroke-opacity=".72" stroke-width="1.15" stroke-linecap="round"><path d="M28 338H175L286 362M438 308H402L385 351M25 477H181L239 448"/></g>
+    <g fill="#D7B781" stroke="#23362A" stroke-width="2"><circle cx="286" cy="362" r="3.5"/><circle cx="385" cy="351" r="3.5"/><circle cx="239" cy="448" r="3.5"/></g>
+    <text x="449" y="365" fill="#C0B08E" font-size="11">腹白线</text><path d="M442 371H413L311 381" stroke="#D7B781" stroke-opacity=".5"/>
+  </g>
+  <path d="M381 445 418 461" stroke="#A6BC9C" stroke-width="1.2" stroke-dasharray="4 4"/><circle cx="381" cy="445" r="5" stroke="#A6BC9C"/>
+  <g data-region="transverse" role="button" tabindex="0" aria-label="腹横肌，移除腹外斜肌及腹内斜肌后的深层放大窗口" style="cursor:pointer">
+    <title>腹横肌深层放大窗口：浅层腹外斜肌和腹内斜肌已移除</title>
+    <rect x="420" y="422" width="180" height="164" rx="10" fill="#1E3027" stroke="#90A68A" stroke-opacity=".8"/>
+    <path d="M436 472C478 453 544 455 584 475V541C537 529 482 530 436 543Z" fill="url(#transverse)" stroke="#BDD1AD" stroke-opacity=".6"/>
+    <g stroke="#D7E0C0" stroke-width="1" stroke-opacity=".5"><path d="M441 479Q511 460 580 479M440 488Q510 471 581 489M440 498Q510 482 581 500M440 509Q510 493 581 511M440 520Q510 505 581 523M440 532Q510 518 581 534"/></g>
+    <g font-family="'PingFang SC','Microsoft YaHei',sans-serif"><text x="434" y="445" fill="#F0E6D4" font-size="14" font-weight="600">腹横肌 · 深层窗口</text><text x="434" y="462" fill="#A9BBA2" font-size="9.5">已移除腹外斜肌、腹内斜肌</text><text x="434" y="565" fill="#C3CEB7" font-size="10">横向肌束 · 协作稳定躯干</text></g>
+  </g>
+  <g text-anchor="middle" font-family="'PingFang SC','Microsoft YaHei',sans-serif"><text x="310" y="35" fill="#D7B781" font-size="10" letter-spacing="3.8">CORE &amp; ABDOMINAL WALL</text><path d="M264 49H356" stroke="#D7B781" stroke-opacity=".3"/><text x="310" y="614" fill="#B3B99F" font-size="10.5">核心还包括背侧肌群等结构；本图重点展示腹壁层次</text><text x="310" y="635" fill="#8F9D88" font-size="10">前面观 + 深层窗口 · 教学示意，非医学比例图</text></g>
+</svg>

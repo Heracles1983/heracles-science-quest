@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+ <title id="title">高位下拉动作示意</title><desc id="desc">坐姿前侧面示意，实线为拉杆降至胸前，虚线为上臂头顶伸展位置。躯干基本稳定，金色箭头表示拉杆下降路径。</desc>
+ <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+ <style>.body{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.38}.equipment{fill:none;stroke:#bca16b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px system-ui,sans-serif;letter-spacing:.7px}.path{fill:none;stroke:#d4b674;stroke-width:1.8;marker-end:url(#arrow)}</style>
+ <text x="24" y="28" fill="#e9e2cc" font-size="12" font-family="system-ui,sans-serif" letter-spacing="2">高位下拉</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">前侧面示意</text>
+ <path d="M59 223H451" stroke="#c5b880" opacity=".22"/>
+ <g class="equipment"><path d="M355 220V47H253M346 220H376M169 180H280M187 185V220M266 185V220"/><circle cx="255" cy="48" r="7" fill="#1c2c23"/><path d="M255 48V115" stroke-width="1.7"/><path d="M219 116H291L310 125M219 116 200 125"/><path d="M249 165H290" stroke-width="10"/></g>
+ <path d="M227 169 280 178 290 215M228 169 262 184 258 216" class="body"/><path d="M282 220H307M250 220H270" stroke="#e8dfca" stroke-width="8" stroke-linecap="round"/>
+ <path d="M217 100Q204 119 212 151L223 173 246 170 238 131 239 105Z" fill="#c7cbb5"/><path d="M216 113 230 110 236 144 220 151Z" fill="#a66358"/><circle cx="224" cy="82" r="16" fill="#e8dfca"/>
+ <path d="M217 108 190 143 204 125M235 108 270 143 293 124" class="body"/>
+ <path d="M217 108 198 76 216 54M235 108 269 78 293 54" class="ghost"/>
+ <path d="M216 45H292L310 53M216 45 199 53" class="equipment" opacity=".4" stroke-dasharray="4 5"/>
+ <path d="M165 62Q147 92 171 126M316 65Q331 94 313 112" class="path"/>
+ <text x="45" y="169" class="note">躯干稳定</text><path d="M115 164H174L212 151" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="374" y="104" class="note">胸前下拉</text><path d="M370 111H326L294 122" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="260" y="253" text-anchor="middle" class="note">实线：拉下 · 虚线：回程 · 避免反复大幅后仰</text>
+</svg>

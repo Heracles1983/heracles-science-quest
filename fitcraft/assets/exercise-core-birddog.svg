@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" width="520" height="270" role="img" aria-labelledby="title desc">
+<title id="title">鸟狗：对侧手脚伸长，避免塌腰和转髋</title><desc id="desc">侧面示意，人物双手双膝四点支撑。实线显示起始姿势，虚线表示对侧手脚沿躯干方向伸长的姿势，金色箭头表示向远处伸长，强调不以抬高代替腰盆控制。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><linearGradient id="body" x1="0" x2="1" y2="1"><stop stop-color="#f0e6cf"/><stop offset="1" stop-color="#bdc0ac"/></linearGradient></defs>
+<style>.bone{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 5;opacity:.45}.equipment{fill:none;stroke:#bca16b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:.5px}.path{fill:none;stroke:#d4b674;stroke-width:1.7;stroke-linecap:round;marker-end:url(#arrow)}.label{fill:#e9e2cc;font:12px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:2px}</style>
+<text x="24" y="28" class="label">鸟狗</text><text x="496" y="28" text-anchor="end" class="note" opacity=".7">侧面视角 · 实线起始 / 虚线伸长</text>
+
+<path d="M48 219H466" stroke="#c5b880" stroke-width="1" opacity=".25"/><rect x="68" y="211" width="382" height="6" rx="3" fill="#566448"/>
+<path d="M188 128 180 170 176 207M203 132 201 172 200 208" class="bone" stroke-width="10"/>
+<path d="M304 139 312 206 361 208M320 139 331 202 380 207" class="bone"/>
+<path d="M182 116Q223 111 253 122L313 127 320 148 194 145Z" fill="url(#body)"/>
+<path d="M232 121 301 129 307 146 239 143Z" fill="#b88055"/><path d="M246 125 245 140M260 127 258 142M274 129 272 143M288 131 286 143" stroke="#e1bc89" stroke-opacity=".5"/>
+<path d="M164 116 183 124" class="bone" stroke-width="10"/><circle cx="148" cy="112" r="16" fill="url(#body)"/><path d="M137 100Q151 94 161 105" stroke="#6c7868" stroke-width="4" fill="none"/>
+<path d="M188 128 131 125 77 127M315 138 377 130 438 129" class="ghost"/>
+<path d="M120 93 79 94M392 99 435 99" class="path"/>
+<text x="42" y="70" class="note">手向远处伸长</text><text x="375" y="70" class="note">脚向后伸长</text>
+<text x="247" y="65" text-anchor="middle" class="note">躯干稳定，骨盆不翻转</text><path d="M264 73 282 111" stroke="#bca16b" opacity=".45"/>
+<text x="260" y="252" text-anchor="middle" class="note">对侧手脚交替伸长 · 不追求抬高 · 保持自然呼吸</text>
+
+</svg>

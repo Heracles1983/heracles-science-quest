@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="650" viewBox="0 0 620 650" fill="none" role="img" aria-labelledby="back-title back-desc">
+  <title id="back-title">背部肌群背面观：背阔肌、斜方肌与深层菱形肌</title>
+  <desc id="back-desc">深绿人体背面观。红铜色背阔肌位于背部两侧下方；金铜色斜方肌从后颈展开至肩部并向胸椎下方收尖。右侧透明观察窗显示斜方肌深层、脊柱与肩胛骨内侧缘之间的菱形肌。三组肌肉可分别选择，中文引线标注。</desc>
+  <defs>
+    <linearGradient id="back-body" x1="150" y1="150" x2="430" y2="590" gradientUnits="userSpaceOnUse"><stop stop-color="#535E4B"/><stop offset="1" stop-color="#26392D"/></linearGradient>
+    <linearGradient id="back-lat" x1="207" y1="280" x2="304" y2="554" gradientUnits="userSpaceOnUse"><stop stop-color="#BA7965"/><stop offset=".55" stop-color="#9C5C53"/><stop offset="1" stop-color="#663C3B"/></linearGradient>
+    <linearGradient id="back-trap" x1="246" y1="126" x2="330" y2="376" gradientUnits="userSpaceOnUse"><stop stop-color="#D3AC75"/><stop offset=".45" stop-color="#B08458"/><stop offset="1" stop-color="#795C43"/></linearGradient>
+    <linearGradient id="back-rhomb" x1="317" y1="193" x2="365" y2="282" gradientUnits="userSpaceOnUse"><stop stop-color="#A8BD9A"/><stop offset="1" stop-color="#627E6C"/></linearGradient>
+    <path id="back-lat-shape" d="M190 267C203 282 215 303 232 318C250 335 276 340 304 327L305 548C283 553 258 560 233 570C238 520 230 473 220 430C208 388 196 352 192 320C190 300 188 281 190 267Z"/>
+    <clipPath id="back-lat-clip"><use href="#back-lat-shape"/></clipPath>
+    <g id="back-lat-fibres" clip-path="url(#back-lat-clip)" stroke="#E2A48A" stroke-opacity=".45" stroke-width="1.1">
+      <path d="M307 342C264 347 223 316 191 278M307 359C263 357 222 326 191 278M307 378C264 369 221 338 191 278M307 398C266 382 222 346 191 278M307 418C267 393 223 358 191 278M307 439C265 410 224 369 191 278M307 461C267 430 227 385 191 278M307 483C267 451 229 403 191 278M307 505C270 473 232 421 191 278M307 529C269 495 235 439 191 278M295 553C265 518 239 454 191 278M276 560C252 520 236 464 191 278M254 567C241 531 233 466 191 278"/>
+    </g>
+    <path id="back-trap-shape" d="M310 79C322 109 334 136 364 151C390 162 412 167 434 183L411 199L370 225C354 247 343 274 330 312L310 388L290 312C277 274 266 247 250 225L209 199L186 183C208 167 230 162 256 151C286 136 298 109 310 79Z"/>
+    <clipPath id="back-trap-clip"><use href="#back-trap-shape"/></clipPath>
+    <mask id="back-trap-window"><rect width="620" height="650" fill="white"/><ellipse cx="341" cy="240" rx="33" ry="60" fill="black"/></mask>
+    <g id="back-trap-fibres" clip-path="url(#back-trap-clip)" stroke="#E8C695" stroke-opacity=".43" stroke-width="1.1">
+      <path d="M310 89C285 150 251 175 199 188M310 109C284 156 251 179 207 193M310 129C281 169 252 187 218 201M310 149C282 176 262 193 231 209M310 169C284 188 263 202 242 217M310 190C283 204 267 216 252 229M310 211C286 221 271 230 261 245M310 234C288 241 278 249 271 267M310 258C291 262 284 273 281 293M310 283C298 287 292 303 290 321M310 308C302 320 299 341 300 355"/>
+      <path d="M310 89C335 150 369 175 421 188M310 109C336 156 369 179 413 193M310 129C339 169 368 187 402 201M310 149C338 176 358 193 389 209M310 169C336 188 357 202 378 217M310 190C337 204 353 216 368 229M310 211C334 221 349 230 359 245M310 234C332 241 342 249 349 267M310 258C329 262 336 273 339 293M310 283C322 287 328 303 330 321M310 308C318 320 321 341 320 355"/>
+    </g>
+    <g id="back-arm">
+      <path d="M186 177C153 175 123 195 116 225C108 255 112 281 126 296C143 306 164 289 177 265L193 227Z" fill="#59674F" stroke="#A0AC87" stroke-opacity=".3"/>
+      <path d="M124 286C110 318 112 350 123 390L138 439C151 448 164 440 168 422C173 388 168 353 161 318L155 286" fill="url(#back-body)" stroke="#8F9B7C" stroke-opacity=".3"/>
+      <path d="M135 306C125 337 133 374 148 401C159 381 160 350 152 316Z" fill="#7A8362" fill-opacity=".35"/>
+      <path d="M137 434C137 459 128 484 125 508L121 567C119 589 129 602 140 601C152 600 160 587 161 570L166 510C170 483 171 458 161 435" fill="url(#back-body)" stroke="#8F9B7C" stroke-opacity=".3"/>
+      <path d="M136 458C149 472 147 501 140 533M159 458C165 486 156 527 151 551M126 440L160 444" stroke="#A1AD88" stroke-opacity=".25"/>
+      <path d="M173 188C145 215 131 247 130 284M159 186C133 213 122 244 121 269M186 202C164 231 150 261 139 290" stroke="#B1B895" stroke-opacity=".23"/>
+    </g>
+  </defs>
+  <g stroke="#D7B781" stroke-opacity=".055"><path d="M70 72V607M150 72V607M230 72V607M390 72V607M470 72V607M550 72V607M42 112H578M42 192H578M42 272H578M42 352H578M42 432H578M42 512H578M42 592H578"/></g>
+  <path d="M310 67V607" stroke="#D7B781" stroke-opacity=".12" stroke-dasharray="3 7"/>
+  <path d="M274 75C277 112 267 138 246 151L186 177L181 244C193 282 202 317 211 356C224 415 232 469 230 518L220 591C276 608 344 608 400 591L390 518C388 469 396 415 409 356C418 317 427 282 439 244L434 177L374 151C353 138 343 112 346 75" fill="url(#back-body)" stroke="#98A282" stroke-opacity=".35" stroke-width="1.2"/>
+  <use href="#back-arm"/><use href="#back-arm" transform="translate(620 0) scale(-1 1)"/>
+  <!-- Scapular outlines are contextual landmarks under the superficial muscles. -->
+  <g fill="#596D55" fill-opacity=".42" stroke="#B2B99A" stroke-opacity=".3" stroke-width="1.3">
+    <path d="M269 190C247 178 218 184 194 209L228 233L265 318C277 283 284 228 269 190Z"/>
+    <path d="M351 190C373 178 402 184 426 209L392 233L355 318C343 283 336 228 351 190Z"/>
+  </g>
+  <g stroke="#C6C8A8" stroke-opacity=".25" stroke-width="3"><path d="M198 207L267 223M422 207L353 223"/></g>
+  <path d="M310 144V566" stroke="#A6AE8E" stroke-opacity=".35" stroke-width="6"/>
+  <g stroke="#D3C7A1" stroke-opacity=".3" stroke-width="2"><path d="M304 176H316M304 199H316M304 222H316M304 245H316M304 268H316M304 291H316M304 314H316M304 337H316M304 360H316M304 383H316M304 406H316M304 429H316M304 452H316M304 475H316M304 498H316"/></g>
+  <g id="back-lats-left" data-region="lats" role="button" tabindex="0" aria-label="左侧背阔肌" style="cursor:pointer"><title>背阔肌：带动上臂，参与肩伸、内收与内旋</title><use href="#back-lat-shape" fill="url(#back-lat)" stroke="#C98F75" stroke-width="1.3"/><use href="#back-lat-fibres"/></g>
+  <g id="back-lats-right" data-region="lats" role="button" tabindex="0" aria-label="右侧背阔肌" transform="translate(620 0) scale(-1 1)" style="cursor:pointer"><title>背阔肌：从躯干后下方汇向肱骨</title><use href="#back-lat-shape" fill="url(#back-lat)" stroke="#C98F75" stroke-width="1.3"/><use href="#back-lat-fibres"/></g>
+  <!-- Rhomboids are beneath trapezius, exposed only through the explicit teaching window. -->
+  <g id="back-rhomboids" data-region="rhomboids" role="button" tabindex="0" aria-label="右侧菱形肌，斜方肌深层透明观察窗" style="cursor:pointer">
+    <title>菱形肌：位于斜方肌深层，连接脊柱与肩胛骨内侧缘</title>
+    <path d="M317 192L350 210L353 225L317 211ZM317 216L354 230L361 286L317 259Z" fill="url(#back-rhomb)" stroke="#B7C5A4" stroke-width="1.2"/>
+    <g stroke="#DBE0BB" stroke-opacity=".5"><path d="M319 198L350 216M319 204L352 222M319 223L354 238M319 231L355 247M319 239L357 257M319 247L359 267M319 255L360 277"/></g>
+  </g>
+  <g id="back-trapezius" data-region="traps" role="button" tabindex="0" aria-label="斜方肌，右侧含深层观察窗" style="cursor:pointer" mask="url(#back-trap-window)"><title>斜方肌：不同部分协同控制肩胛骨，参与后缩与上旋等运动</title><use href="#back-trap-shape" fill="url(#back-trap)" stroke="#D9B37E" stroke-width="1.3"/><use href="#back-trap-fibres"/></g>
+  <ellipse cx="341" cy="240" rx="33" ry="60" fill="#C49A68" fill-opacity=".12" stroke="#D7C99D" stroke-opacity=".85" stroke-width="1.2" stroke-dasharray="4 4" pointer-events="none"/>
+  <path d="M286 402C279 440 276 487 282 545M334 402C341 440 344 487 338 545" stroke="#A4B28A" stroke-opacity=".3" stroke-width="9"/>
+  <path d="M251 567C272 554 290 552 310 557C330 552 348 554 369 567M310 557V590" stroke="#A0A98A" stroke-opacity=".25" stroke-width="2"/>
+  <g font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+    <g fill="#F0E6D4"><text x="29" y="123" font-size="17" font-weight="600" letter-spacing="2">斜方肌</text><text x="29" y="143" fill="#BCAB8A" font-size="9" letter-spacing="1.3">TRAPEZIUS</text><text x="30" y="421" font-size="17" font-weight="600" letter-spacing="2">背阔肌</text><text x="30" y="441" fill="#BCAB8A" font-size="9" letter-spacing=".8">LATISSIMUS DORSI</text><text x="458" y="286" font-size="17" font-weight="600" letter-spacing="2">菱形肌</text><text x="458" y="306" fill="#BCAB8A" font-size="9" letter-spacing=".7">RHOMBOIDS</text><text x="458" y="328" fill="#BCAB8A" font-size="10">斜方肌深层</text><text x="458" y="344" fill="#BCAB8A" font-size="10">透明观察窗</text><text x="449" y="460" font-size="13" letter-spacing="1">肩胛骨内侧缘</text></g>
+    <g stroke="#D7B781" stroke-opacity=".75" stroke-width="1.1" stroke-linejoin="round"><path d="M30 153H181L260 201M30 395H178L248 409M452 294H403L344 253M442 441H411L361 288"/></g>
+    <g fill="#D7B781" stroke="#1D2A21" stroke-width="2"><circle cx="260" cy="201" r="3.4"/><circle cx="248" cy="409" r="3.4"/><circle cx="344" cy="253" r="3.4"/><circle cx="361" cy="288" r="3.4"/></g>
+  </g>
+  <g font-family="'PingFang SC','Microsoft YaHei','Noto Sans CJK SC',sans-serif" text-anchor="middle"><text x="310" y="35" fill="#D7B781" font-size="10" letter-spacing="3.6">BACK MUSCLE ATLAS</text><path d="M264 49H356" stroke="#D7B781" stroke-opacity=".3"/><text x="310" y="630" fill="#A8AD96" font-size="10.5" letter-spacing=".7">背面观 · 深层结构以观察窗展示 · 教学示意</text></g>
+</svg>

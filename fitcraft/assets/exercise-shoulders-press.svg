@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+  <title id="title">坐姿哑铃肩上推举</title><desc id="desc">正面人物坐在靠背凳上。实线显示手肘弯曲、哑铃在肩部附近的起始位；虚线显示双臂向上推起。金色箭头从肩侧向头顶指示路径，肩胛允许自然上回旋。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D7B781" stroke-width="1.6"/></marker></defs>
+  <style>.bone{fill:none;stroke:#E8DFCA;stroke-width:11;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-dasharray:5 5;opacity:.42;stroke-linecap:round}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px system-ui,sans-serif}.path{fill:none;stroke:#D7B781;stroke-width:1.7;marker-end:url(#arrow)}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2">坐姿哑铃肩上推举</text><text x="496" y="28" text-anchor="end" class="note">正面 · 两个位置</text>
+  <path d="M98 224H421" stroke="#C5B880" opacity=".2"/>
+  <g class="equipment"><path d="M225 102V184H296V102M223 185H298M233 186L225 221M287 186L296 221"/></g>
+  <path d="M245 177L231 200L226 218M275 177L289 200L294 218" class="bone"/><path d="M215 221H234M286 221H305" class="bone" stroke-width="7"/>
+  <path d="M240 103Q260 94 280 103L282 169Q260 184 238 169Z" fill="#C5C5AF"/>
+  <path d="M240 101Q231 99 229 111L238 122L247 106ZM280 101Q289 99 291 111L282 122L273 106Z" fill="#B47D62"/>
+  <circle cx="260" cy="78" r="17" fill="#E8DFCA"/><path d="M255 94V102H265V94" fill="#E8DFCA"/>
+  <path d="M237 110L207 131L191 88M283 110L313 131L329 88" class="bone"/>
+  <g class="equipment"><path d="M178 81H205M316 81H343"/><path d="M178 74V88M184 71V91M199 71V91M205 74V88M316 74V88M322 71V91M337 71V91M343 74V88" stroke-width="4"/></g>
+  <path d="M237 110L224 72L227 45M283 110L296 72L293 45" class="ghost"/>
+  <g class="equipment" opacity=".4" stroke-dasharray="3 4"><path d="M213 39H240M280 39H307M213 32V46M240 32V46M280 32V46M307 32V46" stroke-width="3"/></g>
+  <path d="M166 86Q161 45 204 41M354 86Q359 45 316 41" class="path"/>
+  <text x="28" y="116" class="note">向头顶方向推起</text><path d="M133 112H173" stroke="#BCA16B" opacity=".5"/>
+  <text x="350" y="159" class="note">肩胛自然上回旋</text><path d="M342 154L299 112" fill="none" stroke="#BCA16B" opacity=".5"/>
+  <text x="260" y="253" text-anchor="middle" class="note">实线：下降位 · 虚线：推起位 · 躯干稳定，幅度舒适可控</text>
+</svg>
