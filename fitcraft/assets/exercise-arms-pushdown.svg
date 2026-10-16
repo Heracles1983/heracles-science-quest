@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="270" viewBox="0 0 520 270" role="img" aria-labelledby="pushdown-title pushdown-desc">
+  <title id="pushdown-title">绳索下压动作示意</title><desc id="pushdown-desc">侧面人物站在高位滑轮前，实线为肘伸直后的下压位置，虚线为肘弯曲的回程位置。上臂靠近躯干，金色箭头提示绳索向下移动，肩和躯干不大幅摆动。</desc>
+  <defs><marker id="pushdown-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D4B674" stroke-width="1.6"/></marker><linearGradient id="pushdown-body"><stop stop-color="#EFE5CE"/><stop offset="1" stop-color="#BBC3AC"/></linearGradient></defs>
+  <style>.body{fill:none;stroke:#E8DFCA;stroke-width:13;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.38}.equipment{fill:none;stroke:#BCA16B;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.note{fill:#B8C0AC;font:10px 'Microsoft YaHei',sans-serif;letter-spacing:.5px}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="'Microsoft YaHei',sans-serif" font-size="12" letter-spacing="2">绳索下压</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角 · 高位滑轮</text>
+  <path d="M87 221H434" stroke="#C5B880" opacity=".2"/>
+  <path d="M188 151L179 181L170 214M208 151L221 179L232 214" class="body" stroke-width="17"/><path d="M161 217H181M226 217H247" class="body" stroke-width="7"/>
+  <path d="M185 81Q203 74 222 86L223 135Q220 151 207 158H187Q177 145 178 132Z" fill="url(#pushdown-body)"/><circle cx="205" cy="59" r="17" fill="url(#pushdown-body)"/><path d="M219 56L225 62L219 64" fill="#E8DFCA"/><path d="M200 75L198 82" class="body" stroke-width="9"/>
+  <path d="M220 92L226 137L236 191" class="body"/><path d="M213 104Q213 121 223 133" stroke="#B87965" stroke-width="9" stroke-linecap="round"/><circle cx="226" cy="137" r="4" fill="#8C9981"/>
+  <path d="M226 137L269 119" class="ghost"/>
+  <g class="equipment"><path d="M321 49V214M313 50H332M313 214H333" opacity=".55"/><circle cx="303" cy="57" r="10"/><path d="M294 60L247 173"/><path d="M247 173L235 194M247 173L254 195" stroke-width="4"/><circle cx="234" cy="196" r="3" fill="#BCA16B"/><circle cx="254" cy="197" r="3" fill="#BCA16B"/></g>
+  <path d="M294 60L275 100L267 119M275 100L282 120" class="equipment" opacity=".33" stroke-dasharray="4 5"/>
+  <path d="M288 132Q286 169 270 187" fill="none" stroke="#D4B674" stroke-width="1.8" marker-end="url(#pushdown-arrow)"/>
+  <text x="350" y="100" class="note">上臂位置相对稳定</text><path d="M341 105H327" stroke="#BCA16B" opacity=".5"/>
+  <text x="350" y="144" class="note">以伸肘向下送绳</text><path d="M341 149H327" stroke="#BCA16B" opacity=".5"/>
+  <text x="350" y="187" class="note">避免靠体重压下</text>
+  <text x="260" y="252" text-anchor="middle" class="note">实线：下压 · 虚线：回程 · 绳端可自然分开</text>
+</svg>

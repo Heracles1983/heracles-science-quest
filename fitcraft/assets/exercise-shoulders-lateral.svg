@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+  <title id="title">哑铃侧平举</title><desc id="desc">正面站立人物，实线为双臂位于身体两侧的起始位置，虚线为双臂向两侧抬起的位置，肘部轻弯。金色箭头表示向侧方抬臂，示意终点不是必须达到的固定高度。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D7B781" stroke-width="1.6"/></marker></defs>
+  <style>.bone{fill:none;stroke:#E8DFCA;stroke-width:11;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-dasharray:5 5;opacity:.45;stroke-linecap:round;stroke-linejoin:round}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px system-ui,sans-serif}.path{fill:none;stroke:#D7B781;stroke-width:1.7;marker-end:url(#arrow)}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2">哑铃侧平举</text><text x="496" y="28" text-anchor="end" class="note">正面 · 两个位置</text>
+  <path d="M96 224H424" stroke="#C5B880" opacity=".2"/>
+  <circle cx="260" cy="65" r="16" fill="#E8DFCA"/><path d="M255 80V90H265V80" fill="#E8DFCA"/>
+  <path d="M239 92Q260 84 281 92L277 158Q260 171 243 158Z" fill="#C5C5AF"/>
+  <path d="M240 91Q230 92 228 103L239 114L247 96ZM280 91Q290 92 292 103L281 114L273 96Z" fill="#D7B781"/>
+  <path d="M249 162L243 187L238 216M271 162L277 187L282 216" class="bone"/><path d="M227 220H245M275 220H293" class="bone" stroke-width="7"/>
+  <path d="M235 102L221 131L214 162M285 102L299 131L306 162" class="bone"/>
+  <g class="equipment"><path d="M203 169H225M295 169H317M203 161V177M209 160V178M219 160V178M225 161V177M295 161V177M301 160V178M311 160V178M317 161V177"/></g>
+  <path d="M235 102L199 98L166 105M285 102L321 98L354 105" class="ghost"/>
+  <g class="equipment" opacity=".45" stroke-dasharray="3 4"><path d="M155 111H177M343 111H365M155 104V118M177 104V118M343 104V118M365 104V118" stroke-width="3"/></g>
+  <path d="M188 154Q161 143 153 121M332 154Q359 143 367 121" class="path"/>
+  <text x="32" y="76" class="note">肘部轻弯</text><path d="M102 79L195 96" stroke="#BCA16B" opacity=".5"/>
+  <text x="367" y="65" class="note">舒适平面内侧抬</text><path d="M373 73L353 95" stroke="#BCA16B" opacity=".5"/>
+  <text x="260" y="253" text-anchor="middle" class="note">实线：起始位 · 虚线：抬起位 · 不强求肘高于肩，控制回落</text>
+</svg>

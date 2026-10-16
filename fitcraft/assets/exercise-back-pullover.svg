@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+ <title id="title">绳索直臂下压动作示意</title><desc id="desc">侧视人物站在高位绳索前，髋膝略屈，实线为上臂下压到躯干旁，虚线为上臂回到前上方。肘角相对稳定，金箭头表示通过肩伸下压的弧线。</desc>
+ <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+ <style>.body{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.4}.equipment{fill:none;stroke:#bca16b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px system-ui,sans-serif;letter-spacing:.7px}.path{fill:none;stroke:#d4b674;stroke-width:1.8;marker-end:url(#arrow)}</style>
+ <text x="24" y="28" fill="#e9e2cc" font-size="12" font-family="system-ui,sans-serif" letter-spacing="2">绳索直臂下压</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角</text>
+ <path d="M53 224H456" stroke="#c5b880" opacity=".22"/>
+ <g class="equipment"><path d="M378 222V51H337M366 222H401"/><circle cx="339" cy="51" r="7"/><path d="M339 51 235 164" stroke-width="1.6"/><path d="M225 159 243 169"/></g>
+ <path d="M204 153 224 186 211 216M196 155 178 187 157 216" class="body"/><path d="M203 220H229M148 220H171" stroke="#e8dfca" stroke-width="9" stroke-linecap="round"/>
+ <path d="M224 87Q219 104 205 123L187 150 207 163 228 130 245 102Z" fill="#c7cbb5"/><path d="M223 104 235 110 214 146 201 145Z" fill="#a66358"/><circle cx="242" cy="72" r="16" fill="#e8dfca"/>
+ <path d="M232 105 237 135 235 161" class="body"/><path d="M232 105 264 84 293 69" class="ghost"/>
+ <path d="M287 62 302 72" class="equipment" opacity=".4" stroke-dasharray="3 4"/><path d="M309 82Q309 135 263 164" class="path"/>
+ <path d="M253 112Q254 128 250 144" stroke="#d4b674" opacity=".5"/>
+ <text x="63" y="92" class="note">躯干稳定</text><path d="M127 98H173L216 122" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="344" y="150" class="note">肘角相对稳定</text><path d="M339 156H286L240 137" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="260" y="253" text-anchor="middle" class="note">实线：下压 · 虚线：回程 · 用肩伸带动上臂</text>
+</svg>

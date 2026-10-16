@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="270" viewBox="0 0 520 270" role="img" aria-labelledby="curl-title curl-desc">
+  <title id="curl-title">哑铃弯举动作示意</title><desc id="curl-desc">侧面人物站立，实线为屈肘抬起哑铃，虚线为下降到身体旁的起始位置。掌心朝上，金色箭头提示前臂围绕肘部上抬，肘部允许小幅自然调整。</desc>
+  <defs><marker id="curl-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D4B674" stroke-width="1.6"/></marker><linearGradient id="curl-body"><stop stop-color="#EFE5CE"/><stop offset="1" stop-color="#BBC3AC"/></linearGradient></defs>
+  <style>.body{fill:none;stroke:#E8DFCA;stroke-width:13;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.38}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px 'Microsoft YaHei',sans-serif;letter-spacing:.5px}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="'Microsoft YaHei',sans-serif" font-size="12" letter-spacing="2">哑铃弯举</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角 · 掌心朝上</text>
+  <path d="M90 221H434" stroke="#C5B880" opacity=".2"/>
+  <path d="M186 151L180 183L174 214M207 151L213 180L220 214" class="body" stroke-width="17"/><path d="M165 217H184M214 217H234" class="body" stroke-width="7"/>
+  <path d="M180 82Q196 73 215 86L221 136Q219 153 206 158H186Q174 147 175 134Z" fill="url(#curl-body)"/><circle cx="195" cy="59" r="17" fill="url(#curl-body)"/><path d="M209 56L215 62L209 64" fill="#E8DFCA"/><path d="M190 75L191 83" class="body" stroke-width="9"/>
+  <path d="M214 91L224 139L255 95" class="body"/><path d="M219 104Q215 121 224 135" stroke="#C18D5E" stroke-width="9" stroke-linecap="round"/><circle cx="224" cy="139" r="4" fill="#8C9981"/>
+  <path d="M224 139L231 193" class="ghost"/>
+  <g class="equipment"><path d="M240 91L270 102"/><path d="M240 80L234 99M248 82L241 102M270 91L263 110M277 93L270 113" stroke-width="5"/></g>
+  <g class="equipment" opacity=".35" stroke-dasharray="3 4"><path d="M214 195H249M215 184V205M222 182V207M242 182V207M249 184V205" stroke-width="3"/></g>
+  <path d="M276 184Q305 131 278 107" fill="none" stroke="#D4B674" stroke-width="1.8" marker-end="url(#curl-arrow)"/>
+  <text x="328" y="96" class="note">用屈肘抬起重量</text><path d="M318 101H289" stroke="#BCA16B" opacity=".5"/>
+  <text x="328" y="140" class="note">躯干稳定，回程可控</text><path d="M318 145H290" stroke="#BCA16B" opacity=".5"/>
+  <text x="328" y="184" class="note">肘部可自然小幅调整</text>
+  <text x="260" y="252" text-anchor="middle" class="note">实线：弯起 · 虚线：下放 · 不靠后仰甩动</text>
+</svg>

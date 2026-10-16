@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+ <title id="title">胸托哑铃划船动作示意</title><desc id="desc">侧视人物俯卧在上斜凳上，胸部贴靠凳面、双脚支撑地面。实线表示弯肘将哑铃拉向身侧，虚线表示哑铃下放到手臂伸展位置，金箭头向后上方表示拉起路径。</desc>
+ <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+ <style>.body{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.4}.equipment{fill:none;stroke:#bca16b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px system-ui,sans-serif;letter-spacing:.7px}.path{fill:none;stroke:#d4b674;stroke-width:1.8;marker-end:url(#arrow)}</style>
+ <text x="24" y="28" fill="#e9e2cc" font-size="12" font-family="system-ui,sans-serif" letter-spacing="2">胸托哑铃划船</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角</text>
+ <path d="M53 225H461" stroke="#c5b880" opacity=".22"/>
+ <g class="equipment"><path d="M171 160 304 93" stroke-width="10"/><path d="M222 138V219M213 219H239M280 105 323 220M310 220H338"/></g>
+ <path d="M191 139 161 176 143 214M199 141 180 182 179 216" class="body"/><path d="M131 220H153M171 220H194" stroke="#e8dfca" stroke-width="9" stroke-linecap="round"/>
+ <path d="M285 79Q259 90 235 102L189 135 202 153 246 124 293 102Z" fill="#c7cbb5"/><path d="M245 103 276 86 284 98 253 119Z" fill="#a66358"/><circle cx="311" cy="77" r="16" fill="#e8dfca"/>
+ <path d="M282 100 236 91 229 140" class="body"/><path d="M282 100 287 145 286 189" class="ghost"/>
+ <g class="equipment"><path d="M213 146H247M214 137V155M221 136V156M240 136V156M247 137V155"/></g>
+ <g class="equipment" opacity=".4" stroke-dasharray="3 4"><path d="M270 197H304M271 188V206M278 187V207M297 187V207M304 188V206"/></g>
+ <path d="M318 183Q310 143 261 135" class="path"/>
+ <text x="58" y="73" class="note">胸部贴靠凳面</text><path d="M137 79H184L255 114" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="365" y="120" class="note">肘部向后</text><path d="M358 127H326L239 92" fill="none" stroke="#bca16b" opacity=".45"/>
+ <text x="260" y="253" text-anchor="middle" class="note">实线：拉起 · 虚线：下放 · 避免抬胸抢拉</text>
+</svg>

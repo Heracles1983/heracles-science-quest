@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="650" viewBox="0 0 620 650" fill="none" role="img" aria-labelledby="arms-title arms-desc">
+  <title id="arms-title">上臂肌群解剖：前面观与后面观</title>
+  <desc id="arms-desc">左图为上臂前面观，金色肱二头肌覆盖大部分肱肌，绿色肱肌从其下段两侧露出，虚线示意深层轮廓。右图为上臂后面观，铜红色肱三头肌分长头、外侧头和部分露出的内侧头，汇向肘后尺骨鹰嘴。前后两图均带中文引线标签，可选择三个肌群。</desc>
+  <defs>
+    <linearGradient id="arm-skin" x1="80" y1="125" x2="500" y2="550" gradientUnits="userSpaceOnUse"><stop stop-color="#66705A"/><stop offset=".5" stop-color="#3B4B3C"/><stop offset="1" stop-color="#26372D"/></linearGradient>
+    <linearGradient id="arm-biceps" x1="153" y1="190" x2="222" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#D9B17D"/><stop offset=".55" stop-color="#BA8759"/><stop offset="1" stop-color="#805134"/></linearGradient>
+    <linearGradient id="arm-brachialis" x1="135" y1="280" x2="227" y2="410" gradientUnits="userSpaceOnUse"><stop stop-color="#A7BC95"/><stop offset="1" stop-color="#5D8066"/></linearGradient>
+    <linearGradient id="arm-triceps" x1="375" y1="180" x2="472" y2="405" gradientUnits="userSpaceOnUse"><stop stop-color="#CC9476"/><stop offset=".5" stop-color="#A86454"/><stop offset="1" stop-color="#6C3C37"/></linearGradient>
+    <linearGradient id="arm-bone"><stop stop-color="#DBD1A9"/><stop offset="1" stop-color="#989E7B"/></linearGradient>
+    <g id="arm-fibres" stroke="#EED2A6" stroke-width="1.1" stroke-opacity=".36"><path d="M163 225C146 272 163 330 180 367M173 210C159 263 173 325 185 371M183 214C175 273 183 328 189 370M195 211C202 263 198 328 193 372M205 223C220 278 207 329 198 365"/></g>
+  </defs>
+  <g stroke="#D7B781" stroke-opacity=".055"><path d="M70 80V578M150 80V578M230 80V578M390 80V578M470 80V578M550 80V578"/><path d="M38 130H582M38 210H582M38 290H582M38 370H582M38 450H582M38 530H582"/></g>
+  <path d="M310 90V589" stroke="#D7B781" stroke-opacity=".13" stroke-dasharray="3 7"/>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+    <text x="310" y="34" fill="#D7B781" font-size="11" letter-spacing="3.4">UPPER ARM ANATOMY</text>
+    <path d="M260 49H360" stroke="#D7B781" stroke-opacity=".3"/>
+    <text x="184" y="80" fill="#E9E0C9" font-size="15" letter-spacing="3">前面观</text><text x="432" y="80" fill="#E9E0C9" font-size="15" letter-spacing="3">后面观</text>
+  </g>
+  <!-- Shoulder, upper-arm silhouette, forearm and hand: front view. -->
+  <path d="M126 126Q156 105 193 116Q222 125 234 157L237 212Q247 280 228 361L214 408Q225 447 216 495L206 547Q207 565 197 581L188 595Q180 600 175 591L176 578Q161 593 154 585L158 569Q143 578 139 568L153 542L157 486Q149 441 157 407L141 366Q121 317 126 252L119 197Q104 156 126 126Z" fill="url(#arm-skin)" stroke="#859175" stroke-opacity=".5" stroke-width="1.3"/>
+  <path d="M121 183Q125 153 147 139Q166 122 193 124Q219 140 225 169L216 221Q197 235 179 224Q145 215 121 183Z" fill="#657154" stroke="#A4AD86" stroke-opacity=".3"/>
+  <g stroke="#BAC199" stroke-opacity=".18"><path d="M144 147Q130 175 152 205M159 136Q147 174 170 219M177 130Q171 172 187 224M195 137Q202 176 201 222"/></g>
+  <!-- Quiet humerus and forearm landmarks, rather than an exposed skeleton. -->
+  <path d="M188 190L187 395M188 407L183 529" stroke="#C6C39D" stroke-opacity=".14" stroke-width="12" stroke-linecap="round"/>
+  <path d="M172 414Q162 450 172 485L172 542M199 416Q211 447 201 489L190 548M156 545L185 553" stroke="#A3B28B" stroke-opacity=".3" stroke-width="1.2"/>
+  <!-- Brachialis is deep: an outlined proximal region and exposed distal edges. -->
+  <g data-region="brachialis" id="arm-brachialis-region" role="button" tabindex="0" aria-label="肱肌，主要位于二头肌深层" style="cursor:pointer">
+    <title>肱肌：起自肱骨前面下半部，止于尺骨；主要位于肱二头肌深层，参与屈肘</title>
+    <path d="M148 283Q136 322 149 359Q154 383 177 405L190 412Q210 398 219 370Q232 331 220 285Q205 261 183 263Q160 264 148 283Z" fill="url(#arm-brachialis)" stroke="#B4C89A" stroke-width="1.2"/>
+    <path d="M153 276Q170 249 190 253Q215 257 221 281" stroke="#C2D3AE" stroke-dasharray="4 5" stroke-opacity=".8"/>
+    <g stroke="#D0DDB7" stroke-opacity=".36" stroke-width="1.1"><path d="M147 307Q144 356 180 401M155 322Q155 367 183 401M220 310Q228 355 194 405M216 337Q216 375 190 405"/></g>
+    <path d="M183 399L189 421L196 408" stroke="#CAD1AD" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <g data-region="biceps" id="arm-biceps-region" role="button" tabindex="0" aria-label="肱二头肌，长头和短头" style="cursor:pointer">
+    <title>肱二头肌：长头与短头位于上臂前方，参与屈肘和前臂旋后</title>
+    <path d="M172 167Q158 182 155 208Q141 238 150 280Q156 327 178 369L187 385L194 368Q200 328 192 284Q185 235 183 207Q184 181 191 169" fill="url(#arm-biceps)" stroke="#E2BD87" stroke-width="1.3"/>
+    <path d="M196 184Q207 194 215 219Q231 260 217 309Q209 350 194 373L187 385Q184 351 187 318Q190 270 183 225Q183 204 188 187" fill="url(#arm-biceps)" stroke="#D9AC76" stroke-width="1.2"/>
+    <use href="#arm-fibres"/>
+    <path d="M184 377Q190 394 187 412L175 431" stroke="#D7C29A" stroke-width="6" stroke-linecap="round"/>
+    <path d="M172 167L173 193M194 169L190 190" stroke="#D7C29A" stroke-width="4" stroke-linecap="round"/>
+  </g>
+  <path d="M157 409Q178 399 213 408" stroke="#C9C5A1" stroke-opacity=".35" stroke-width="1.2"/>
+  <!-- Back view: scapular origin of long head, posterior arm and olecranon. -->
+  <path d="M376 127Q411 106 444 117Q477 128 486 162L486 226Q499 293 478 365L465 405Q480 445 469 493L458 548L460 572Q457 588 449 590L441 579Q439 598 431 596L425 578Q420 596 413 590L409 571Q397 578 393 568L404 543L410 488Q400 446 410 407L394 368Q373 323 374 267L365 197Q356 155 376 127Z" fill="url(#arm-skin)" stroke="#859175" stroke-opacity=".5" stroke-width="1.3"/>
+  <path d="M379 141L406 126L420 177L395 207L377 182Z" fill="#899371" fill-opacity=".45" stroke="#CBD0A7" stroke-opacity=".4"/>
+  <path d="M367 177Q372 143 400 127Q420 118 445 126Q476 143 479 172L472 225Q453 229 433 219Q398 211 367 177Z" fill="#657154" stroke="#A4AD86" stroke-opacity=".3"/>
+  <g stroke="#BAC199" stroke-opacity=".18"><path d="M388 143Q377 174 403 207M404 131Q397 171 420 216M424 127Q422 168 436 218M444 134Q454 170 450 221"/></g>
+  <g data-region="triceps" id="arm-triceps-region" role="button" tabindex="0" aria-label="肱三头肌，长头外侧头和内侧头" style="cursor:pointer">
+    <title>肱三头肌：三个头汇向尺骨鹰嘴，参与伸肘；长头跨过肩关节</title>
+    <!-- Long head lies medially; outer head lies laterally; distal medial head is exposed. -->
+    <path d="M405 179Q391 204 391 242Q389 290 405 333L430 389Q439 373 438 344L425 268Q421 215 417 185" fill="url(#arm-triceps)" stroke="#DEA98B" stroke-width="1.3"/>
+    <path d="M446 210Q463 209 474 230Q486 267 472 309Q461 345 440 368L430 389L426 357Q429 327 430 297Q426 246 446 210Z" fill="url(#arm-triceps)" stroke="#CE9477" stroke-width="1.3"/>
+    <path d="M405 331Q400 360 416 389L432 406Q450 395 461 368L464 344Q453 363 439 373L431 390Z" fill="#926450" stroke="#C69C79" stroke-width="1.1"/>
+    <g stroke="#EDB499" stroke-opacity=".4" stroke-width="1.1"><path d="M407 201Q396 253 416 318L433 376M414 211Q408 261 426 326M451 226Q441 260 441 295Q442 337 432 374M463 233Q462 281 445 331M472 247Q472 289 447 340M412 352L430 391M459 357L438 395"/></g>
+    <path d="M430 375L427 405Q432 414 440 407L442 383" fill="#C9BD98" stroke="#DDD1A8" stroke-opacity=".8"/>
+    <path d="M410 182L414 207" stroke="#D4C09A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <path d="M414 416Q405 450 419 491L419 546M447 415Q461 452 451 496L440 548M405 544L446 555" stroke="#ACB591" stroke-opacity=".3" stroke-width="1.2"/>
+  <path d="M424 411Q431 417 440 410" stroke="#CDC6A0" stroke-width="3" stroke-linecap="round"/>
+  <!-- Labels remain outside the muscle silhouettes. -->
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif">
+    <text x="24" y="231" fill="#F0E6D4" font-size="16" font-weight="600">肱二头肌</text><text x="24" y="250" fill="#C7B48F" font-size="9" letter-spacing="1">BICEPS BRACHII</text>
+    <text x="23" y="376" fill="#F0E6D4" font-size="16" font-weight="600">肱肌</text><text x="23" y="395" fill="#B3C4A3" font-size="9" letter-spacing="1">BRACHIALIS</text>
+    <text x="23" y="415" fill="#ABB79C" font-size="10">多数位于深层</text>
+    <text x="491" y="261" fill="#F0E6D4" font-size="16" font-weight="600">肱三头肌</text><text x="491" y="279" fill="#C7AB91" font-size="8.5" letter-spacing=".6">TRICEPS BRACHII</text>
+    <text x="329" y="169" fill="#DCCBB1" font-size="11">长头</text><text x="500" y="334" fill="#DCCBB1" font-size="11">外侧头</text><text x="490" y="407" fill="#DCCBB1" font-size="11">内侧头</text>
+    <text x="489" y="424" fill="#A9B198" font-size="9">部分被覆盖</text>
+    <text x="321" y="466" fill="#DCCBB1" font-size="11">尺骨鹰嘴</text>
+    <text x="27" y="511" fill="#C9CEB5" font-size="10">屈肘 / 旋后</text><text x="495" y="511" fill="#C9CEB5" font-size="10">伸肘</text>
+  </g>
+  <g stroke="#D7B781" stroke-opacity=".72" stroke-width="1.1" stroke-linejoin="round">
+    <path d="M24 262H108L173 288M24 424H117L152 353M492 287H480L457 280M352 174H376L405 247M497 338H474L459 316M488 411H471L451 374M363 461H397L434 408"/>
+  </g>
+  <g fill="#D7B781" stroke="#213126" stroke-width="1.5"><circle cx="173" cy="288" r="3"/><circle cx="152" cy="353" r="3"/><circle cx="457" cy="280" r="3"/><circle cx="405" cy="247" r="2.5"/><circle cx="459" cy="316" r="2.5"/><circle cx="451" cy="374" r="2.5"/><circle cx="434" cy="408" r="2.5"/></g>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle"><text x="310" y="619" fill="#AFB79F" font-size="10.5">肱肌深层轮廓以虚线提示 · 肌腱以浅色标示</text><text x="310" y="639" fill="#8F9B85" font-size="9.5">教学示意，非医学比例图 · 点击肌群了解其功能</text></g>
+</svg>

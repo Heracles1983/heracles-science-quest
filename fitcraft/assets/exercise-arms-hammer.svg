@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="270" viewBox="0 0 520 270" role="img" aria-labelledby="hammer-title hammer-desc">
+  <title id="hammer-title">锤式弯举动作示意</title><desc id="hammer-desc">侧面人物站立，实线表示掌心相对握持哑铃并屈肘抬起，虚线表示下放位置。竖向哑铃强调中立握法，前臂围绕肘部弯起，肱肌等多块屈肘肌共同工作。</desc>
+  <defs><marker id="hammer-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D4B674" stroke-width="1.6"/></marker><linearGradient id="hammer-body"><stop stop-color="#EFE5CE"/><stop offset="1" stop-color="#BBC3AC"/></linearGradient></defs>
+  <style>.body{fill:none;stroke:#E8DFCA;stroke-width:13;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.38}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px 'Microsoft YaHei',sans-serif;letter-spacing:.5px}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="'Microsoft YaHei',sans-serif" font-size="12" letter-spacing="2">锤式弯举</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角 · 中立握法</text>
+  <path d="M90 221H434" stroke="#C5B880" opacity=".2"/>
+  <path d="M186 151L180 183L174 214M207 151L213 180L220 214" class="body" stroke-width="17"/><path d="M165 217H184M214 217H234" class="body" stroke-width="7"/>
+  <path d="M180 82Q196 73 215 86L221 136Q219 153 206 158H186Q174 147 175 134Z" fill="url(#hammer-body)"/><circle cx="195" cy="59" r="17" fill="url(#hammer-body)"/><path d="M209 56L215 62L209 64" fill="#E8DFCA"/><path d="M190 75L191 83" class="body" stroke-width="9"/>
+  <path d="M214 91L224 139L259 95" class="body"/><path d="M219 115L225 136" stroke="#91AA8D" stroke-width="8" stroke-linecap="round"/><circle cx="224" cy="139" r="4" fill="#8C9981"/>
+  <path d="M224 139L231 191" class="ghost"/>
+  <g class="equipment"><path d="M259 77V111"/><path d="M249 77H269M247 84H271M247 105H271M249 112H269" stroke-width="5"/></g>
+  <g class="equipment" opacity=".35" stroke-dasharray="3 4"><path d="M231 174V207M220 175H242M218 182H244M218 201H244M220 208H242" stroke-width="3"/></g>
+  <path d="M280 183Q306 130 285 108" fill="none" stroke="#D4B674" stroke-width="1.8" marker-end="url(#hammer-arrow)"/>
+  <text x="328" y="96" class="note">掌心相对，拇指朝上</text><path d="M318 101H291" stroke="#BCA16B" opacity=".5"/>
+  <text x="328" y="140" class="note">手腕自然，不反折</text><path d="M318 145H294" stroke="#BCA16B" opacity=".5"/>
+  <text x="328" y="184" class="note">多块屈肘肌协同工作</text>
+  <text x="260" y="252" text-anchor="middle" class="note">实线：弯起 · 虚线：下放 · 不靠耸肩借力</text>
+</svg>

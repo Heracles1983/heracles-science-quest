@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+  <title id="title">俯身反向飞鸟，上方斜视教学示意</title><desc id="desc">人物髋部折叠，膝微弯，背部保持自然姿态。由上方斜视可见双臂从身体前下方向两侧打开。实线为双手位于躯干前下方的起始位置，虚线为上臂打开后的姿态。后束和上背一起参与，肘角相对稳定。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D7B781" stroke-width="1.6"/></marker></defs>
+  <style>.bone{fill:none;stroke:#E8DFCA;stroke-width:11;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-dasharray:5 5;opacity:.45;stroke-linecap:round;stroke-linejoin:round}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px system-ui,sans-serif}.path{fill:none;stroke:#D7B781;stroke-width:1.7;marker-end:url(#arrow)}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2">俯身反向飞鸟</text><text x="496" y="28" text-anchor="end" class="note">上方斜视 · 两个位置</text>
+  <path d="M101 226H422" stroke="#C5B880" opacity=".2"/>
+  <path d="M246 170L229 195L221 218M274 170L291 195L299 218" class="bone"/><path d="M210 222H230M290 222H310" class="bone" stroke-width="7"/>
+  <path d="M231 103Q260 93 289 103L278 171Q260 183 242 171Z" fill="#B9C0A9"/>
+  <path d="M260 103V163M239 116L253 131M281 116L267 131" stroke="#71826A" stroke-width="1.3" opacity=".6"/>
+  <circle cx="260" cy="78" r="16" fill="#E8DFCA"/><path d="M254 93V101H266V93" fill="#E8DFCA"/>
+  <path d="M235 102Q224 101 222 113L234 124L244 107ZM285 102Q296 101 298 113L286 124L276 107Z" fill="#A96163"/>
+  <path d="M232 113L235 143L246 169M288 113L285 143L274 169" class="bone"/>
+  <g class="equipment"><path d="M236 177H256M264 177H284M236 170V184M242 168V186M250 168V186M256 170V184M264 170V184M270 168V186M278 168V186M284 170V184"/></g>
+  <path d="M232 113L196 119L160 135M288 113L324 119L360 135" class="ghost"/>
+  <g class="equipment" opacity=".45" stroke-dasharray="3 4"><path d="M149 142H171M349 142H371M149 135V149M171 135V149M349 135V149M371 135V149" stroke-width="3"/></g>
+  <path d="M215 179Q177 182 161 157M305 179Q343 182 359 157" class="path"/>
+  <text x="29" y="76" class="note">上臂向两侧打开</text><path d="M134 80L188 111" stroke="#BCA16B" opacity=".5"/>
+  <text x="367" y="89" class="note">躯干稳定</text><path d="M362 95L294 143" stroke="#BCA16B" opacity=".5"/>
+  <text x="260" y="253" text-anchor="middle" class="note">实线：起始位 · 虚线：打开位 · 可用胸部支撑降低稳定难度</text>
+</svg>

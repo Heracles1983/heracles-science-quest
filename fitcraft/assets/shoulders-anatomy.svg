@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="650" viewBox="0 0 620 650" fill="none" role="img" aria-labelledby="title desc">
+  <title id="title">三角肌前中后三束：前面观与后面观</title>
+  <desc id="desc">左侧是身体前面观，铜色为前束，金色为中束。右侧是后面观，酒红色为后束，金色为中束。三束包覆肩关节，向上臂外侧汇合。后束只在后面观着色，避免把后束误认为胸前肌肉。点击彩色肌束可学习相应动作。</desc>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#57614E"/><stop offset="1" stop-color="#26372C"/></linearGradient>
+    <linearGradient id="front" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#D4A474"/><stop offset="1" stop-color="#8A573E"/></linearGradient>
+    <linearGradient id="middle" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#E0C594"/><stop offset="1" stop-color="#A3834E"/></linearGradient>
+    <linearGradient id="rear" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#BD7A78"/><stop offset="1" stop-color="#783F49"/></linearGradient>
+    <g id="torso">
+      <path d="M-25 153V178C-34 190-58 196-75 205C-98 217-106 239-104 272L-96 340L-91 408C-90 424-82 434-74 431C-65 429-65 415-67 402L-70 340L-61 296C-55 335-43 367-41 401L-43 472Q0 488 43 472L41 401C43 367 55 335 61 296L70 340L67 402C65 415 65 429 74 431C82 434 90 424 91 408L96 340L104 272C106 239 98 217 75 205C58 196 34 190 25 178V153" fill="url(#body)" stroke="#8C967B" stroke-opacity=".55" stroke-width="1.2"/>
+      <ellipse cy="121" rx="31" ry="41" fill="url(#body)" stroke="#8C967B" stroke-opacity=".5"/>
+      <path d="M-24 152Q0 165 24 152M-74 291L-74 343M74 291L74 343" stroke="#B8B798" stroke-opacity=".25"/>
+    </g>
+    <path id="front-left" d="M-73 205C-56 204-46 210-43 221C-42 237-54 259-72 280L-83 293C-79 260-76 229-73 205Z"/>
+    <path id="middle-left" d="M-74 205C-94 213-103 231-103 252C-101 269-94 283-83 293C-81 263-79 231-74 205Z"/>
+    <path id="rear-left" d="M-73 205C-56 203-43 212-40 224C-42 242-54 262-71 281L-83 293C-80 257-77 226-73 205Z"/>
+    <g id="front-fibres" stroke="#F2D3AC" stroke-opacity=".55" stroke-width=".9"><path d="M-68 208Q-57 223-82 288M-59 211Q-53 231-81 288M-50 217Q-48 236-80 289M-46 225Q-48 248-79 289"/></g>
+    <g id="middle-fibres" stroke="#F3DEAD" stroke-opacity=".6" stroke-width=".9"><path d="M-78 208Q-93 241-84 288M-85 214Q-98 244-85 288M-93 223Q-100 251-86 286"/></g>
+    <g id="rear-fibres" stroke="#E4A8A3" stroke-opacity=".58" stroke-width=".9"><path d="M-68 208Q-54 226-82 288M-59 212Q-48 235-81 288M-50 218Q-44 241-80 288M-44 225Q-45 249-79 289"/></g>
+  </defs>
+  <g stroke="#D7B781" stroke-opacity=".055"><path d="M45 75V520M155 75V520M265 75V520M355 75V520M465 75V520M575 75V520M35 160H585M35 270H585M35 380H585M35 490H585"/></g>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+    <text x="310" y="35" fill="#D7B781" font-size="11" letter-spacing="4">DELTOID MUSCLE</text>
+    <path d="M264 49H356" stroke="#D7B781" stroke-opacity=".35"/>
+    <text x="155" y="68" fill="#F0E6D4" font-size="15" letter-spacing="3">前面观</text>
+    <text x="465" y="68" fill="#F0E6D4" font-size="15" letter-spacing="3">后面观</text>
+  </g>
+  <g transform="translate(155 0)">
+    <use href="#torso"/>
+    <path d="M-28 186Q-45 197-73 201M28 186Q45 197 73 201" stroke="#C5C1A0" stroke-width="3" stroke-linecap="round"/>
+    <path d="M-39 224Q-24 211-5 215V275Q-36 293-57 269ZM39 224Q24 211 5 215V275Q36 293 57 269Z" fill="#647056" fill-opacity=".5" stroke="#9AA17E" stroke-opacity=".25"/>
+    <path d="M0 213V379M-25 303H-5M5 303H25M-25 329H-5M5 329H25M-23 355H-5M5 355H23" stroke="#8F9A7A" stroke-opacity=".3"/>
+    <g data-region="anterior" role="button" tabindex="0" aria-label="前面观左侧三角肌前束" style="cursor:pointer"><title>前束：锁骨外侧起点，参与上臂向前抬起</title><use href="#front-left" fill="url(#front)" stroke="#DEB180"/><use href="#front-fibres"/></g>
+    <g data-region="anterior" role="button" tabindex="0" aria-label="前面观右侧三角肌前束" transform="scale(-1 1)" style="cursor:pointer"><use href="#front-left" fill="url(#front)" stroke="#DEB180"/><use href="#front-fibres"/></g>
+    <g data-region="lateral" role="button" tabindex="0" aria-label="前面观左侧三角肌中束" style="cursor:pointer"><title>中束：肩峰起点，参与上臂侧向抬起</title><use href="#middle-left" fill="url(#middle)" stroke="#E0C594"/><use href="#middle-fibres"/></g>
+    <g data-region="lateral" role="button" tabindex="0" aria-label="前面观右侧三角肌中束" transform="scale(-1 1)" style="cursor:pointer"><use href="#middle-left" fill="url(#middle)" stroke="#E0C594"/><use href="#middle-fibres"/></g>
+    <path d="M-85 294L-81 302L-76 291M85 294L81 302L76 291" stroke="#D1C19C" stroke-width="2.3"/>
+  </g>
+  <g transform="translate(465 0)">
+    <use href="#torso"/>
+    <path d="M-22 166Q0 178 22 166M0 177V416M-14 188L-49 219L-14 275M14 188L49 219L14 275" stroke="#ACB18E" stroke-opacity=".3"/>
+    <path d="M-48 226L-12 241L-21 289Q-45 276-48 226ZM48 226L12 241L21 289Q45 276 48 226Z" fill="#627052" fill-opacity=".45" stroke="#9CA584" stroke-opacity=".35"/>
+    <path d="M-16 212L-54 213L-73 202M16 212L54 213L73 202" stroke="#C1B99A" stroke-width="2.6" stroke-linecap="round"/>
+    <path d="M-49 291Q-41 348-13 373M49 291Q41 348 13 373" stroke="#94A07B" stroke-opacity=".26"/>
+    <g data-region="posterior" role="button" tabindex="0" aria-label="后面观左侧三角肌后束" style="cursor:pointer"><title>后束：肩胛冈起点，参与上臂向后与向外打开</title><use href="#rear-left" fill="url(#rear)" stroke="#CE8E89"/><use href="#rear-fibres"/></g>
+    <g data-region="posterior" role="button" tabindex="0" aria-label="后面观右侧三角肌后束" transform="scale(-1 1)" style="cursor:pointer"><use href="#rear-left" fill="url(#rear)" stroke="#CE8E89"/><use href="#rear-fibres"/></g>
+    <g data-region="lateral" role="button" tabindex="0" aria-label="后面观左侧三角肌中束" style="cursor:pointer"><use href="#middle-left" fill="url(#middle)" stroke="#E0C594"/><use href="#middle-fibres"/></g>
+    <g data-region="lateral" role="button" tabindex="0" aria-label="后面观右侧三角肌中束" transform="scale(-1 1)" style="cursor:pointer"><use href="#middle-left" fill="url(#middle)" stroke="#E0C594"/><use href="#middle-fibres"/></g>
+    <path d="M-85 294L-81 302L-76 291M85 294L81 302L76 291" stroke="#D1C19C" stroke-width="2.3"/>
+  </g>
+  <g stroke-width="1.1" stroke-linejoin="round">
+    <path d="M100 237L107 495L108 517" stroke="#C3915D"/><circle cx="100" cy="237" r="3" fill="#C3915D"/>
+    <path d="M245 249L291 321V517" stroke="#D7B781"/><circle cx="245" cy="249" r="3" fill="#D7B781"/>
+    <path d="M413 239L491 495V517" stroke="#A96163"/><circle cx="413" cy="239" r="3" fill="#A96163"/>
+  </g>
+  <g font-family="'PingFang SC','Microsoft YaHei',sans-serif" text-anchor="middle">
+    <text x="108" y="541" fill="#D9AF82" font-size="17">前束</text><text x="108" y="562" fill="#A8AD96" font-size="10">锁骨部 · 前抬</text>
+    <text x="291" y="541" fill="#E0C594" font-size="17">中束</text><text x="291" y="562" fill="#A8AD96" font-size="10">肩峰部 · 侧抬</text>
+    <text x="491" y="541" fill="#CC9690" font-size="17">后束</text><text x="491" y="562" fill="#A8AD96" font-size="10">肩胛冈部 · 向后打开</text>
+    <text x="310" y="601" fill="#D1C19C" font-size="11">三束共同汇向上臂外侧 · 肱骨三角肌粗隆</text>
+    <text x="310" y="630" fill="#9FA78F" font-size="10">前后对照 · 点击彩色区域学习 · 教学示意，非医学比例图</text>
+  </g>
+</svg>

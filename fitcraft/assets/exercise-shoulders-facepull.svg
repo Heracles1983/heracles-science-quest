@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+  <title id="title">绳索面拉侧面示意</title><desc id="desc">站立人物面对右侧滑轮，绳索约在面部高度。虚线表示双臂前伸的起始位置，实线表示绳索拉向面部两侧、手肘向外后方移动的结束位置。金色箭头从前方指向面部，要求躯干稳定，避免全身后仰。</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D7B781" stroke-width="1.6"/></marker></defs>
+  <style>.bone{fill:none;stroke:#E8DFCA;stroke-width:11;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-dasharray:5 5;opacity:.45;stroke-linecap:round;stroke-linejoin:round}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px system-ui,sans-serif}.path{fill:none;stroke:#D7B781;stroke-width:1.7;marker-end:url(#arrow)}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2">绳索面拉</text><text x="496" y="28" text-anchor="end" class="note">侧面 · 两个位置</text>
+  <path d="M88 224H464" stroke="#C5B880" opacity=".2"/>
+  <g class="equipment"><path d="M442 49V219M425 219H459M443 83H452"/><circle cx="438" cy="85" r="9" stroke-width="2"/></g>
+  <path d="M242 163L225 190L203 217M258 163L267 190L279 217" class="bone"/><path d="M195 221H214M272 221H291" class="bone" stroke-width="7"/>
+  <path d="M237 98Q247 91 261 101L266 161Q253 174 237 164Z" fill="#C5C5AF"/>
+  <circle cx="254" cy="76" r="16" fill="#E8DFCA"/><path d="M267 71L273 78L266 81M249 91V100H259V91" fill="#E8DFCA"/>
+  <path d="M240 101Q228 100 227 112L240 122L250 107Z" fill="#A96163"/>
+  <path d="M239 110L207 116L257 88" class="bone"/>
+  <path d="M249 111L220 122L269 97" class="bone" stroke-width="8" opacity=".65"/>
+  <path d="M239 110L290 109L340 94M249 111L299 119L347 102" class="ghost"/>
+  <path d="M429 85L288 87L260 85M288 87L272 99" class="equipment" stroke-width="2"/>
+  <path d="M429 85L357 94L341 91M357 94L348 104" class="equipment" stroke-width="2" opacity=".4" stroke-dasharray="4 4"/>
+  <path d="M351 68Q311 51 278 67" class="path"/>
+  <text x="32" y="74" class="note">拉向面部两侧</text><path d="M136 79L245 87" stroke="#BCA16B" opacity=".5"/>
+  <text x="321" y="158" class="note">不靠全身后仰</text><path d="M312 153L268 133" stroke="#BCA16B" opacity=".5"/>
+  <text x="260" y="253" text-anchor="middle" class="note">虚线：起始位 · 实线：拉近位 · 肩部与上背协作，控制回程</text>
+</svg>

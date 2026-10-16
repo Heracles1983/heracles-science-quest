@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" width="520" height="270" role="img" aria-labelledby="title desc">
+<title id="title">死虫：对侧手脚伸长，腰盆维持可控</title><desc id="desc">侧面示意，人物仰卧，实线为双臂抬起、髋膝屈曲的起始姿势。虚线表示对侧手脚向远处伸长后的姿势，箭头显示伸长方向；避免为了贴近地面而拱腰。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><linearGradient id="body" x1="0" x2="1" y2="1"><stop stop-color="#f0e6cf"/><stop offset="1" stop-color="#bdc0ac"/></linearGradient></defs>
+<style>.bone{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 5;opacity:.45}.equipment{fill:none;stroke:#bca16b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:.5px}.path{fill:none;stroke:#d4b674;stroke-width:1.7;stroke-linecap:round;marker-end:url(#arrow)}.label{fill:#e9e2cc;font:12px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:2px}</style>
+<text x="24" y="28" class="label">死虫</text><text x="496" y="28" text-anchor="end" class="note" opacity=".7">侧面视角 · 实线起始 / 虚线伸长</text>
+
+<path d="M57 216H459" stroke="#c5b880" stroke-width="1" opacity=".25"/><rect x="75" y="208" width="364" height="6" rx="3" fill="#566448"/>
+<circle cx="133" cy="186" r="15" fill="url(#body)"/><path d="M147 185 166 185" class="bone" stroke-width="10"/>
+<path d="M166 171Q193 164 223 175L282 178 289 198H179Q164 194 166 171Z" fill="url(#body)"/>
+<path d="M220 174 273 179 277 197 224 194Z" fill="#b88055"/><path d="M230 178 228 193M241 179 239 194M252 181 250 194" stroke="#e1bc89" stroke-opacity=".5"/>
+<path d="M185 174 190 99M197 176 204 100" class="bone" stroke-width="10"/>
+<path d="M281 184 304 120 358 122M288 187 319 132 367 136" class="bone"/>
+<path d="M183 175 137 139 88 132" class="ghost"/><path d="M286 187 348 183 416 202" class="ghost"/>
+<path d="M178 90Q124 87 94 117" class="path"/><path d="M373 151Q404 163 421 187" class="path"/>
+<text x="250" y="67" class="note">对侧手脚缓慢伸长</text><text x="46" y="72" class="note">不必落到地面</text>
+<text x="333" y="88" class="note">腰盆可控</text><path d="M336 94 264 161" stroke="#bca16b" opacity=".45"/>
+<text x="260" y="252" text-anchor="middle" class="note">若开始拱腰，缩短伸展距离 · 左右交替并自然呼吸</text>
+
+</svg>

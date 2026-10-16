@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" width="520" height="270" role="img" aria-labelledby="title desc">
+<title id="title">卷腹：肩胛轻离垫面，再受控返回</title><desc id="desc">侧面示意，人物仰卧屈膝，双脚着地。实线为起始姿势，虚线为肩胛轻离垫面的卷起姿势，金色弧形箭头表示胸廓向骨盆靠近，颈部保持自然。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><linearGradient id="body" x1="0" x2="1" y2="1"><stop stop-color="#f0e6cf"/><stop offset="1" stop-color="#bdc0ac"/></linearGradient></defs>
+<style>.bone{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 5;opacity:.45}.equipment{fill:none;stroke:#bca16b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:.5px}.path{fill:none;stroke:#d4b674;stroke-width:1.7;stroke-linecap:round;marker-end:url(#arrow)}.label{fill:#e9e2cc;font:12px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:2px}</style>
+<text x="24" y="28" class="label">卷腹</text><text x="496" y="28" text-anchor="end" class="note" opacity=".7">侧面视角 · 实线起始 / 虚线卷起</text>
+
+<path d="M77 216H447" stroke="#c5b880" stroke-width="1" opacity=".25"/><rect x="95" y="207" width="342" height="6" rx="3" fill="#566448"/>
+<path d="M308 182 361 144 408 203M310 186 375 155 423 205" class="bone"/><path d="M406 206H431" class="bone" stroke-width="8"/>
+<path d="M197 172Q232 164 269 175L312 179 314 198H204Q191 195 197 172Z" fill="url(#body)"/>
+<path d="M245 173 296 180 296 196 247 193Q235 186 245 173Z" fill="#b88055"/><path d="M254 177 252 192M265 178 263 193M277 180 275 194" stroke="#e1bc89" stroke-opacity=".5"/>
+<path d="M183 182 197 182" class="bone" stroke-width="9"/><circle cx="166" cy="183" r="15" fill="url(#body)"/><path d="M155 173Q166 166 175 176" stroke="#6c7868" stroke-width="4" fill="none"/>
+<path d="M212 180 236 168 254 181" class="bone" stroke-width="9"/>
+<path d="M310 189Q271 171 243 151L204 134 187 127" class="ghost"/><circle cx="174" cy="119" r="14" class="ghost"/><path d="M228 146 248 137 264 158" class="ghost"/>
+<path d="M127 168Q127 119 151 110" class="path"/><path d="M196 94Q229 94 253 121" class="path"/>
+<text x="315" y="81" class="note">胸廓靠近骨盆</text><path d="M308 86 272 128" class="equipment" stroke-width="1" opacity=".5"/>
+<text x="50" y="74" class="note">不拉头颈</text><text x="261" y="252" text-anchor="middle" class="note">小幅、可控地卷起 · 双脚稳定支撑 · 保持呼吸</text>
+
+</svg>

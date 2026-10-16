@@ -1,0 +1,13 @@
+/* All assets are local, scoped to this installation, including GitHub project subpaths. */
+const PREFIX='heracles-fitcraft-'+new URL(self.registration.scope).pathname+'-';
+const CACHE=PREFIX+'20261016-six-parts-1';
+const ASSETS=["./", "./academy.css", "./academy.js", "./assets/arena.webp", "./assets/arms-anatomy.svg", "./assets/art-0.webp", "./assets/art-1.webp", "./assets/art-2.webp", "./assets/art-3.webp", "./assets/art-4.webp", "./assets/art-5.webp", "./assets/back-anatomy.svg", "./assets/chest-anatomy.svg", "./assets/core-anatomy.svg", "./assets/exercise-arms-curl.svg", "./assets/exercise-arms-hammer.svg", "./assets/exercise-arms-overhead.svg", "./assets/exercise-arms-pushdown.svg", "./assets/exercise-back-chestrow.svg", "./assets/exercise-back-pulldown.svg", "./assets/exercise-back-pullover.svg", "./assets/exercise-back-row.svg", "./assets/exercise-core-birddog.svg", "./assets/exercise-core-crunch.svg", "./assets/exercise-core-deadbug.svg", "./assets/exercise-core-pallof.svg", "./assets/exercise-flat.svg", "./assets/exercise-fly.svg", "./assets/exercise-incline.svg", "./assets/exercise-legs-calfraise.svg", "./assets/exercise-legs-legcurl.svg", "./assets/exercise-legs-rdl.svg", "./assets/exercise-legs-squat.svg", "./assets/exercise-pushup.svg", "./assets/exercise-shoulders-facepull.svg", "./assets/exercise-shoulders-lateral.svg", "./assets/exercise-shoulders-press.svg", "./assets/exercise-shoulders-rearfly.svg", "./assets/favicon.svg", "./assets/legs-anatomy.svg", "./assets/shoulders-anatomy.svg", "./chest-data.js", "./classic.html", "./courses/arms.js", "./courses/back.js", "./courses/chest.js", "./courses/core.js", "./courses/legs.js", "./courses/shoulders.js", "./game.js", "./index.html", "./manifest.webmanifest", "./questions.js", "./style.css"];
+self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(ASSETS)).then(()=>self.skipWaiting())));
+self.addEventListener('activate',event=>event.waitUntil(caches.keys().then(names=>Promise.all(names.filter(n=>n.startsWith(PREFIX)&&n!==CACHE).map(n=>caches.delete(n)))).then(()=>self.clients.claim())));
+self.addEventListener('fetch',event=>{
+ if(event.request.method!=='GET'||new URL(event.request.url).origin!==self.location.origin||!event.request.url.startsWith(self.registration.scope))return;
+ event.respondWith(fetch(event.request).then(response=>{
+  if(response.ok){const copy=response.clone();event.waitUntil(caches.open(CACHE).then(cache=>cache.put(event.request,copy)));}
+  return response;
+ }).catch(async()=>{const cached=await caches.match(event.request);if(cached)return cached;if(event.request.mode==='navigate')return caches.match(new URL('./',self.registration.scope));return Response.error();}));
+});

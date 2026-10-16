@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" width="520" height="270" role="img" aria-labelledby="title desc">
+<title id="title">Pallof 抗旋转推：抵抗来自侧面的牵拉</title><desc id="desc">斜前面示意，弹力带牢固固定于身体侧方，人物双脚分开站立，双手在胸前握住弹力带。实线表示手在胸前，虚线表示双手前推出去的位置。箭头显示手臂推出方向和侧向阻力，躯干保持朝前，不跟随拉力转动。</desc>
+<defs><marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker><linearGradient id="body" x1="0" x2="1" y2="1"><stop stop-color="#f0e6cf"/><stop offset="1" stop-color="#bdc0ac"/></linearGradient></defs>
+<style>.bone{fill:none;stroke:#e8dfca;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 5;opacity:.45}.equipment{fill:none;stroke:#bca16b;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:.5px}.path{fill:none;stroke:#d4b674;stroke-width:1.7;stroke-linecap:round;marker-end:url(#arrow)}.label{fill:#e9e2cc;font:12px 'PingFang SC','Microsoft YaHei',sans-serif;letter-spacing:2px}</style>
+<text x="24" y="28" class="label">Pallof 抗旋转推</text><text x="496" y="28" text-anchor="end" class="note" opacity=".7">斜前视角 · 侧向锚点</text>
+
+<path d="M75 222H450" stroke="#c5b880" stroke-width="1" opacity=".25"/>
+<path d="M67 63V192M61 68H74M61 186H74" class="equipment"/><circle cx="67" cy="118" r="5" fill="#c7ac75"/>
+<path d="M67 118 325 130" stroke="#d4b674" stroke-width="2.4"/><path d="M67 118 397 126" stroke="#d4b674" stroke-width="1.6" stroke-dasharray="5 5" opacity=".45"/>
+<path d="M278 155 258 190 246 217M302 155 319 183 344 215" class="bone"/><path d="M234 219H257M337 219H361" class="bone" stroke-width="8"/>
+<path d="M266 94Q287 84 308 100L311 150Q293 167 271 151Z" fill="url(#body)"/>
+<path d="M271 124 308 128 308 151Q287 161 273 148Z" fill="#b88055"/><path d="M279 127 279 150M290 129 290 153M301 129 301 150" stroke="#e1bc89" stroke-opacity=".5"/>
+<path d="M289 83 289 95" class="bone" stroke-width="10"/><circle cx="289" cy="66" r="17" fill="url(#body)"/><path d="M278 53Q290 47 302 59" stroke="#6c7868" stroke-width="4" fill="none"/>
+<path d="M270 104 285 137 324 131M308 106 330 116 325 131" class="bone" stroke-width="9"/>
+<path d="M270 104 329 121 394 128M308 106 351 117 394 128" class="ghost"/>
+<path d="M340 97 388 105" class="path"/><path d="M198 91 157 89" class="path"/>
+<text x="87" y="82" class="note">侧向拉力</text><text x="351" y="79" class="note">双手推出、收回</text>
+<text x="390" y="181" text-anchor="middle" class="note">胸廓与骨盆朝前</text><path d="M384 168 312 148" stroke="#bca16b" opacity=".45"/>
+<text x="260" y="252" text-anchor="middle" class="note">锚点牢固 · 抵抗转体而非主动扭转 · 两侧都练</text>
+
+</svg>

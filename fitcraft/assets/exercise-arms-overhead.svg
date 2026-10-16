@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="270" viewBox="0 0 520 270" role="img" aria-labelledby="overhead-title overhead-desc">
+  <title id="overhead-title">过顶哑铃臂屈伸动作示意</title><desc id="overhead-desc">侧面人物双手稳固托住哑铃，虚线为屈肘下降到头后的位置，实线为向上伸肘抬起的位置。举起的上臂保持舒适角度，金色箭头提示伸肘向上，避免挺腰或强夹肘。</desc>
+  <defs><marker id="overhead-arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#D4B674" stroke-width="1.6"/></marker><linearGradient id="overhead-body"><stop stop-color="#EFE5CE"/><stop offset="1" stop-color="#BBC3AC"/></linearGradient></defs>
+  <style>.body{fill:none;stroke:#E8DFCA;stroke-width:12;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#E8DFCA;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.38}.equipment{fill:none;stroke:#BCA16B;stroke-width:4;stroke-linecap:round}.note{fill:#B8C0AC;font:10px 'Microsoft YaHei',sans-serif;letter-spacing:.5px}</style>
+  <text x="24" y="28" fill="#E9E2CC" font-family="'Microsoft YaHei',sans-serif" font-size="12" letter-spacing="2">过顶臂屈伸</text><text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角 · 双手托铃</text>
+  <path d="M87 225H434" stroke="#C5B880" opacity=".2"/>
+  <path d="M215 160L210 189L203 218M238 160L246 188L253 218" class="body" stroke-width="17"/><path d="M194 222H214M247 222H268" class="body" stroke-width="7"/>
+  <path d="M207 101Q224 92 241 104L248 147Q246 163 233 168H213Q203 154 203 142Z" fill="url(#overhead-body)"/><circle cx="226" cy="78" r="17" fill="url(#overhead-body)"/><path d="M240 75L246 81L240 83" fill="#E8DFCA"/><path d="M221 94L221 101" class="body" stroke-width="9"/>
+  <path d="M240 110L250 69L260 40" class="body"/><path d="M233 106L240 77" stroke="#B87965" stroke-width="8" stroke-linecap="round"/><circle cx="250" cy="69" r="4" fill="#8C9981"/>
+  <path d="M250 69L206 102" class="ghost"/>
+  <g class="equipment"><path d="M258 42L258 52"/><path d="M244 38H275M246 32H273" stroke-width="6"/><path d="M246 53H271" stroke-width="5"/></g>
+  <g class="equipment" opacity=".35" stroke-dasharray="3 4"><path d="M204 93V113M192 91H216M190 98H218M192 114H216" stroke-width="3"/></g>
+  <path d="M175 99Q169 56 227 45" fill="none" stroke="#D4B674" stroke-width="1.8" marker-end="url(#overhead-arrow)"/>
+  <text x="323" y="91" class="note">上臂举到舒适角度</text><path d="M313 96H286L256 78" fill="none" stroke="#BCA16B" opacity=".5"/>
+  <text x="323" y="136" class="note">屈伸肘，控制下降</text><path d="M313 141H281" stroke="#BCA16B" opacity=".5"/>
+  <text x="323" y="181" class="note">肋骨稳定，不强夹肘</text>
+  <text x="260" y="252" text-anchor="middle" class="note">实线：伸肘 · 虚线：屈肘 · 不追求过深幅度</text>
+</svg>

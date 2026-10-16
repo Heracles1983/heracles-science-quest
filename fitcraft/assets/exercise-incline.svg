@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 270" role="img" aria-labelledby="title desc">
+  <title id="title">上斜哑铃卧推动作示意</title>
+  <desc id="desc">侧视人物躺在约三十度上斜的长凳上，双脚踩地。实线表示下降位置，虚线表示向肩部上方推起的位置，金色弧线表示哑铃轨迹。</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="7" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M1 1 8 5 1 9" fill="none" stroke="#d4b674" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <linearGradient id="body" x1="0" x2="1" y2="1"><stop stop-color="#f0e6cf"/><stop offset="1" stop-color="#bdc0ac"/></linearGradient>
+  </defs>
+  <style>.bone{fill:none;stroke:#e8dfca;stroke-width:13;stroke-linecap:round;stroke-linejoin:round}.ghost{fill:none;stroke:#e8dfca;stroke-width:4;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:5 6;opacity:.4}.equipment{fill:none;stroke:#bca16b;stroke-width:4;stroke-linecap:round;stroke-linejoin:round}.note{fill:#b8c0ac;font:10px system-ui,sans-serif;letter-spacing:1px}.path{fill:none;stroke:#d4b674;stroke-width:1.7;stroke-linecap:round;marker-end:url(#arrow)}@media(prefers-reduced-motion:no-preference){.path{stroke-dasharray:4 5;animation:flow 2.8s linear infinite}@keyframes flow{to{stroke-dashoffset:-18}}}</style>
+  <text x="24" y="28" fill="#e9e2cc" font-family="system-ui,sans-serif" font-size="12" letter-spacing="2">上斜哑铃卧推</text>
+  <text x="496" y="28" text-anchor="end" class="note" opacity=".65">侧面视角</text>
+  <path d="M84 216H445" stroke="#c5b880" stroke-width="1" opacity=".22"/>
+  <g class="equipment"><path d="M143 106 281 183H326" stroke-width="10"/><path d="M168 123 156 212M290 189 312 212M155 212H178M299 212H325M168 188 247 163"/></g>
+  <path d="M275 163 326 178 344 208" class="bone" stroke-width="16"/>
+  <path d="M286 169 346 181 378 208" class="bone" stroke-width="17"/>
+  <path d="M340 211H361M373 211H396" stroke="#e8dfca" stroke-width="9" stroke-linecap="round"/>
+  <path d="M181 101 193 108" class="bone" stroke-width="12"/>
+  <path d="M197 104Q215 102 233 120L287 157Q298 164 290 176L205 130Q191 122 197 104Z" fill="url(#body)"/>
+  <path d="M202 106Q220 109 237 125L224 136 201 123Z" fill="#9e5260"/>
+  <path d="M207 109 227 128M202 113 222 130" stroke="#d59b9c" stroke-width="1" opacity=".45"/>
+  <circle cx="167" cy="93" r="16" fill="url(#body)"/>
+  <path d="M154 85 148 91 153 94" fill="#e8dfca"/>
+  <path d="M170 79Q182 83 180 94" fill="none" stroke="#6c7868" stroke-width="4" stroke-linecap="round"/>
+  <path d="M213 118 253 140 268 89" class="bone"/>
+  <circle cx="253" cy="140" r="4" fill="#a5ad97"/>
+  <g class="equipment"><path d="M250 80H287"/><path d="M251 71V89M257 69V91M280 69V91M286 71V89" stroke-width="5"/></g>
+  <path d="M213 117 216 77 221 42" class="ghost"/>
+  <g class="equipment" opacity=".4" stroke-dasharray="3 4"><path d="M203 33H240"/><path d="M204 24V42M210 22V44M233 22V44M239 24V42" stroke-width="3"/></g>
+  <path d="M302 82Q288 38 254 35" class="path"/>
+  <path d="M195 44Q184 71 192 95" class="path" opacity=".6"/>
+  <text x="335" y="75" class="note">推向肩部上方</text>
+  <path d="M326 82H305" stroke="#bca16b" opacity=".45"/>
+  <text x="335" y="117" class="note">肩胛保持稳定</text>
+  <path d="M326 122H298L280 136" fill="none" stroke="#bca16b" opacity=".45"/>
+  <path d="M128 174H166M128 174 161 193" fill="none" stroke="#bca16b" stroke-width="1" opacity=".5"/>
+  <path d="M149 174A21 21 0 0 1 146 185" fill="none" stroke="#bca16b" opacity=".5"/>
+  <text x="88" y="183" class="note">约 30°</text>
+  <text x="260" y="252" text-anchor="middle" class="note">动作路径示意 · 以舒适可控的幅度练习</text>
+</svg>
