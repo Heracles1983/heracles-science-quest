@@ -4,7 +4,7 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#121814">
 <meta name="description" content="HERACLES LAB 健身秘典：从肌肉解剖到动作与训练编排，用互动闯关系统学习传统健美训练。胸、背、肩、腿、手臂、核心六大部位，完整互动训练课。">
 <title>六部位系统训练课 · HERACLES LAB 健身秘典</title>
-<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./academy.css">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./academy.css"><link rel="stylesheet" href="./planner.css">
 <script defer src="./chest-data.js"></script>
 <script defer src="./courses/chest.js"></script>
 <script defer src="./courses/back.js"></script>
@@ -12,19 +12,25 @@
 <script defer src="./courses/legs.js"></script>
 <script defer src="./courses/arms.js"></script>
 <script defer src="./courses/core.js"></script>
+<script defer src="./course-enrichment.js"></script>
+<script defer src="./selection-lab.js"></script>
+<script defer src="./planner-data.js"></script>
+<script defer src="./planner-engine.js"></script>
 <script defer src="./academy.js"></script>
+<script defer src="./planner.js"></script>
 </head>
 <body>
 <header class="site-header"><a class="brand" href="./" aria-label="HERACLES 健身秘典首页"><span class="seal">H<span>◆</span></span><span><b>HERACLES</b><small>LAB / 健身秘典</small></span></a><nav aria-label="主导航"><a class="active" href="./">系统训练课</a><a href="./classic.html">冒险牌桌 <span>↗</span></a><button id="notebook-open">我的学习笔记 <span id="note-count">0</span></button></nav><span class="header-label"><i></i> 让每一次训练，都有依据</span></header>
 <main>
 <section class="intro"><div><p class="eyebrow"><i></i> THE SCIENCE OF BUILDING STRENGTH</p><h1>读懂肌肉，<span>才懂训练。</span></h1><p class="intro-copy">胸、背、肩、腿、手臂、核心，一次学完整套训练思路。</p></div><div class="overall-progress"><span class="progress-ring" id="progress-ring"><b id="progress-number">0<small>%</small></b></span><div><small>六部位训练知识旅程</small><b id="progress-caption">尚未开始 · 随时出发</b><span>进度自动保存在此浏览器</span></div></div></section>
-<section class="body-map" aria-labelledby="map-title"><div class="map-heading"><p class="eyebrow" id="map-title">六大部位 · 系统学习地图</p><span>6 章全开放 · 24 关 · 60 个知识点</span></div><div class="body-regions" id="body-regions"></div></section>
+<section class="body-map" aria-labelledby="map-title"><div class="map-heading"><p class="eyebrow" id="map-title">六大部位 · 系统学习地图</p><span>6 部位基础篇 + 计划设计毕业章</span></div><div class="body-regions" id="body-regions"></div></section>
 <section class="course" aria-labelledby="course-title"><div class="course-top"><div class="chapter-number"><b id="chapter-number">01</b><span>CHAPTER</span></div><div class="course-title"><div class="eyebrow"><span id="course-english">PECTORALIS MAJOR</span> <span class="available" id="course-badge">完整课程</span></div><h2 id="course-title">胸大肌<span>训练入门</span></h2></div><div class="course-meta"><span>4 个关卡</span><i></i><span id="course-progress">本章 0%</span><i></i><span>零基础友好</span></div><button id="sources-open" class="subtle-button">学习依据 <span>↗</span></button></div>
 <nav class="lesson-steps" id="lesson-steps" aria-label="胸大肌课程关卡"></nav>
 <div class="learning-layout"><section class="visual-panel" aria-label="互动肌肉解剖图"><div class="visual-title"><span class="eyebrow" id="visual-kicker">ANATOMY EXPLORER</span><button class="visual-zoom" id="anatomy-zoom" aria-label="放大胸大肌解剖图">放大图谱 ↗</button></div><div id="anatomy-container" class="anatomy-container"><p class="loading">正在载入解剖图…</p></div><div class="visual-bottom"><div class="legend" id="anatomy-legend"></div><span class="visual-hint">点击肌肉，探索它的作用</span></div><div class="anatomy-controls" id="anatomy-controls" aria-label="选择肌肉分区"></div><div class="anatomy-tip"><span>✧</span><p id="anatomy-caption">理解结构，是选择动作的第一步。</p><span>HERACLES<br>ANATOMY LAB</span></div></section>
 <section class="lesson-panel" id="lesson-panel" aria-live="polite"></section></div>
 <div class="course-foot"><span><i></i> 知识可以反复练习，学习没有生命值限制。</span><button id="review-open">错题复习 <span id="wrong-count">0</span> ↗</button></div></section>
-<section class="whole-plan"><div><p class="eyebrow">PUT IT ALL TOGETHER</p><h3>六个部位，怎样连成一周？</h3><p>把推、拉、下肢和核心合理组合，为恢复留出空间。</p></div><button class="secondary" id="schedule-open">查看整周编排示例 ↗</button></section>
+<section class="whole-plan"><div><p class="eyebrow">PUT IT ALL TOGETHER</p><h3>六个部位，怎样连成一周？</h3><p>把推、拉、下肢和核心合理组合，为恢复留出空间。</p></div><button class="secondary" id="schedule-open">进入计划设计毕业章 ↘</button></section>
+<section id="planner" class="planner-chapter" aria-labelledby="planner-title"></section>
 <section class="principles"><div><span>01 / 看见结构</span><h3>训练从理解身体开始</h3><p>分区解剖与肌纤维走向，让每个动作都有来由。</p></div><div><span>02 / 亲手探索</span><h3>把“为什么”真正弄懂</h3><p>调整角度、选择负荷，用即时反馈验证你的判断。</p></div><div><span>03 / 带走方法</span><h3>拼出自己的训练思路</h3><p>从动作到组数与休息，把零散知识连成一堂课。</p></div></section>
 </main>
 <footer><a href="./" class="footer-brand">HERACLES LAB <span>◆</span></a><p>以科学为底色，让力量有迹可循。</p><small>一般健身学习 · 编排案例用于教学 · 不替代个体化指导</small></footer>
